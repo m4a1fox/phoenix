@@ -6,6 +6,7 @@
     <a href="./">radmin</a>
     <a href="./">ladmin</a>
     <a href="./">dadmin</a>
+    <a href="./">fadmin</a>
 </div>
 <?php endif;?>
 </body>
