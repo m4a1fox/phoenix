@@ -4,7 +4,6 @@
     <div id="transparent"></div>
     <a href="./">admin</a>
     <a href="./">radmin</a>
-    <a href="./">ladmin</a>
 </div>
 <?php endif;?>
 </body>
