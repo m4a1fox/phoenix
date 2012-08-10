@@ -1,0 +1,4 @@
+$(document).ready(function(){
+//    var pathJs = $("script").next().attr('src');
+//    alert('Это тестовое js окно. Найти его можно по пути ' + pathJs);
+})

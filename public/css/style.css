@@ -1,0 +1,215 @@
+*{
+    font-family: Vardana, sans-serif;
+    margin:0px auto; padding: 0;
+}
+html{
+    height:100%;
+    background: url('../img/bg.jpg');
+    
+}
+body{
+    margin: 0;
+			  padding-bottom: 30px;
+			  font: 14px/1.4 "Helvetica Neue", "Lucida Grande", "Arial";
+			  font-size: 14px;
+			  line-height: 1.5;
+			  -webkit-font-smoothing: antialiased;
+			  color: #8b8b8b;
+    min-height:100%; position:relative; min-width:800px; background: url('../img/bg_main.jpg')  50% 0 no-repeat; z-index: -2;
+}
+* html body{
+    height:100%;
+}
+
+a{text-decoration: none; color: inherit;}
+
+#menu{
+    text-align: center;
+    padding: 8px;
+}
+
+#menu a{
+    font-size: 14px;
+    line-height: 50px;
+    padding: 12px 20px 12px 19px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#menu a:hover{
+    background-image: linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -o-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(0,140,254)),
+		color-stop(0.72, rgb(0,176,252))
+	);
+
+}
+
+.selected-menu{
+    background-image: linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -o-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,140,254) 44%, rgb(0,176,252) 72%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(0,140,254)),
+		color-stop(0.72, rgb(0,176,252))
+	);
+
+}
+
+#search{
+    padding: 8px;
+    line-height: 50px;
+    text-align: right;
+}
+
+#search input{
+	height: 33px;
+	margin-right: 20px;
+}
+
+#search input[type=text]{
+    width: 290px;
+    border: 1px solid black;
+   	padding:0 35px 0 15px;
+   	background: #262627;
+   	color: white;
+
+   	border-radius: 5px;
+   	border-bottom: 1px solid #5c5d61;
+   	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+#search input[type=reset]{
+    /*border: 1px solid black;*/
+    height: 20px;
+    width: 20px;
+    visibility: hidden;
+    position: relative;
+    margin-left: -50px;
+    /*background: #ce1000;*/
+    font-weight: bold;
+    color: red;
+    background: transparent;
+    border: transparent;
+    /*background: url(../img/search.png) no-repeat;*/
+    /*background-color: red;*/
+}
+
+
+#search input[type=submit]{
+    /*border: 1px solid black;*/
+    padding:0 15px 0 15px;
+    border-radius: 5px;
+    position: relative;
+    top: -8px;
+    cursor: pointer;
+    left: -15px;
+    /*border-bottom: 1px solid #5c5d61;*/
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+    background: #ce1000;
+    font-weight: bold;
+    background: url(../img/search_green.png) no-repeat center;
+    /*background-color: #18DDFF;*/
+    /*background: transparent;*/
+    border: transparent;
+}
+
+
+
+
+
+#content{
+    margin: 0px auto;
+    width: 600px;
+    min-height: 900px;
+    width:expression(document.body.clientWidth > 800 ? "100%" : "800px"); overflow:hidden;
+}
+
+#content h1{
+    margin-top: 50px;
+    color: white;
+    font-size: 37px;
+    text-align: center;    
+}
+
+
+#info{
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+}
+
+#info_content{
+    position: inherit; 
+    padding: 10px;
+    color: white;
+    left: 1px;
+}
+
+#transparent {
+    opacity:0.2;
+    filter:alpha(opacity=20);
+    -moz-opacity:0.2;
+    background-color: black;
+    width: inherit;
+    height: inherit;
+    position: inherit;
+}
+
+#code{
+    display: block;
+    border: 1px solid gray;
+        border-radius: 5px;
+}
+
+#code > code{
+
+        display: block;
+}
+
+.num { 
+    padding: 10px 0 10px 0;
+    float: left; 
+    color: white; 
+    text-align: right; 
+    margin-right: 6pt; 
+    padding-right: 6pt;
+    padding-left: 6px;
+    border-right: 1px solid gray;
+    background: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#footer{
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    bottom: 0px;
+    color: white;
+}
+#footer div{background: red; z-index: -1;}
+#footer-text{
+    background: transparent;
+}
