@@ -34,7 +34,7 @@ class About extends Controller{
     function add(){
         if (isset($_POST['send'])) {
             if (!empty($_POST['name'])) {
-                $this->get_db->insert1(array('name' => $_POST['name']));
+                $this->get_db->insert1(array('name' => $_POST['name']), 'user');
                 header("Location: /about");
             } else {
                 echo 'Error';
@@ -43,9 +43,7 @@ class About extends Controller{
     }
     
     function edit($id){
-        $this->model('get_db');
-        
-        if(isset($_POST['update'])){
+       if(isset($_POST['update'])){
             $this->get_db->updateTable($_POST['id'], array('name'=>$_POST['name']));
             header("Location: /about");
         }

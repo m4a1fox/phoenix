@@ -5,20 +5,20 @@
             parent::__construct();
         }
         
-        function selectMulti(){
-            return $this->db->selectMulti('user');
+        function selectMulti($table){
+            return $this->db->selectMulti($table);
         }
         
-        function insert1($table='user', $data){
+        function insert1($data, $table='user'){
             return $this->db->insert($table, $data);
         }
         
         
-        function insert2($table='user', $data){
+        function insert2($data, $table='user'){
             return $this->db->insertMulti($table, $data);
         }
         
-        function select($table = 'user', $id){
+        function select($id, $table = 'user'){
             return $this->db->select($table, $id);
         }
         
@@ -26,8 +26,8 @@
             $this->db->update('user', $data, 'id='.$id);
         }
         
-        function delete1($data){
-            $this->db->delete('user', $data);
+        function delete1($data, $table='user'){
+            $this->db->delete($table, $data);
         }
 
     }

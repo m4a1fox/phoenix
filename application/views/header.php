@@ -40,8 +40,8 @@
 <div id="info">
     <div id="transparent"></div>
     <div id="info_content">
-        <li><a href="<?php echo M4A1_HOST;?>captcha">Captcha</a></li>
-        <li><a href="<?php echo M4A1_HOST;?>download">Download</a></li>
+        <li><a href="<?php echo M4A1_HOST;?>content/show/captcha">Captcha</a></li>
+        <li><a href="<?php echo M4A1_HOST;?>content/show/download">Download</a></li>
     </div>
 </div>
     <h1 id="logo"><img src="<?php echo M4A1_HOST;?>public/img/leavse.png"></h1>
