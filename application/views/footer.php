@@ -3,7 +3,7 @@
 <div id="footer">
     <div id="transparent"></div>
     <label id="link">
-    <a href="./">admin</a>
+    <a href="./admin">admin</a>
     <a href="./">radmin</a>
     <a href="./">ladmin</a>
     <a href="./">dadmin</a>

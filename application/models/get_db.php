@@ -9,8 +9,13 @@
             return $this->db->selectMulti('user');
         }
         
-        function insert1($data){
-            return $this->db->insert('user', $data);
+        function insert1($table='user', $data){
+            return $this->db->insert($table, $data);
+        }
+        
+        
+        function insert2($table='user', $data){
+            return $this->db->insertMulti($table, $data);
         }
         
         function select($table = 'user', $id){
