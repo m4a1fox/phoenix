@@ -24,7 +24,7 @@ class Database extends PDO{
     }
     
     public function select($table, $data){
-        $where = $this->generalImplodeArray($data);
+        $where = $this->generalAndArray($data);
         $sql = $this->prepare("SELECT * FROM `$table` WHERE $where");
         $sql->execute($data);
         return $sql->fetch(PDO::FETCH_OBJ);
@@ -63,10 +63,22 @@ class Database extends PDO{
     }
     
     
-    private function generalImplodeArray($data){
+    public function generalImplodeArray($data){
     	$str = '';
         ksort($data);
-    	function FromArrayToStr($str){return '`'.$str.'` = :'.$str;}
-        return implode(', ', array_map("FromArrayToStr", array_keys($data)));
+        return implode(', ', array_map(function($str){return '`'.$str.'` = :'.$str;}, array_keys($data)));
     }
+    
+    private function generalAndArray($data){
+    	$str = '';
+        ksort($data);
+        return implode(" AND ", array_map(function($str){return '`'.$str.'` = :'.$str;}, array_keys($data)));
+    }
+    
+    
+    
+    
+    
+    
+    
 }

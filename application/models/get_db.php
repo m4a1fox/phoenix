@@ -22,8 +22,8 @@
             return $this->db->select($table, $id);
         }
         
-        function updateTable($id, $data){
-            $this->db->update('user', $data, 'id='.$id);
+        function updateTable($id, $data, $table='user'){
+            $this->db->update($table, $data, 'id='.$id);
         }
         
         function delete1($data, $table='user'){

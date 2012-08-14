@@ -1,5 +1,4 @@
 <?php
-
 class dbg{
     public static function showDump($param) {
         echo '<pre>'.  var_dump($param).'</pre>';

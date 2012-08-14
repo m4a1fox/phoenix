@@ -22,7 +22,7 @@
 
 </head>
 <body>
-<div style="height: 7px; background: black; border-bottom: 1px solid #737476; "></div>
+<div style="height: 7px; background: black; border-bottom: 1px solid #737476; z-index: 99;"></div>
 
 <div style="height: 40px; width: 1100px;">
     <div id="search" >
@@ -34,14 +34,22 @@
             
         </div>
 </div>
-
 <div id="content">
 
 <div id="info">
     <div id="transparent"></div>
     <div id="info_content">
-        <li><a href="<?php echo M4A1_HOST;?>content/show/captcha">Captcha</a></li>
-        <li><a href="<?php echo M4A1_HOST;?>content/show/download">Download</a></li>
+        <?php
+            $link = new shortlink();
+            $link = $link->allLink();
+        ?>
+        <?php foreach ($link as $value):?>
+            <li>
+                <a href="<?php echo M4A1_HOST;?>content/show/<?php echo $value->link;?>">
+                    <?php echo $value->title?>
+                </a>
+            </li>
+        <?php endforeach;?>
     </div>
 </div>
     <h1 id="logo"><img src="<?php echo M4A1_HOST;?>public/img/leavse.png"></h1>

@@ -121,7 +121,7 @@ a{text-decoration: none; color: inherit;}
     position: relative;
     top: -8px;
     cursor: pointer;
-    left: -15px;
+    left: -25px;
     /*border-bottom: 1px solid #5c5d61;*/
     /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
     background: #ce1000;
@@ -153,6 +153,7 @@ a{text-decoration: none; color: inherit;}
 
 
 #info{
+    z-index: -1;
     border: 1px solid black;
     position: fixed;
     top: 0;
@@ -255,3 +256,14 @@ form input[type=submit]:hover {
 
 
 form br {clear: left;}
+
+a[type="del"]{
+    font-weight: bold;
+    color: red;
+}
+
+a[type="edit"]{
+    font-weight: bold;
+    color: green;
+}
+

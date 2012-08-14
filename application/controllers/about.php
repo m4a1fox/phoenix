@@ -47,7 +47,7 @@ class About extends Controller{
             $this->get_db->updateTable($_POST['id'], array('name'=>$_POST['name']));
             header("Location: /about");
         }
-        $data['user'] = $this->get_db->select("`id` = $id");
+        $data['user'] = $this->get_db->select(array('id'=>$id));
         if($data['user'])
         	$this->view('./about/edit', $data);
         else
