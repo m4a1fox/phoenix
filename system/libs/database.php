@@ -3,7 +3,6 @@ class Database extends PDO{
 	public function __construct($dbdriver, $hostname, $dbname, $username, $password, $char_set){
     	try{
     	parent::__construct($dbdriver . "::host=". $hostname ."; dbname=".$dbname, $username, $password,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES '.$char_set));
-            
         parent::setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e){
             exception_handler($e, 'Ошибка подключения к БД');
@@ -19,13 +18,15 @@ class Database extends PDO{
     }
 
     public function insertMulti($table, $data){        
-        foreach($data as $key=>$value){
+        foreach($data as $value){
             $this->insert($table, $value);
         }
     }
     
-    public function select($table, $where){
-        $sql = $this->query("SELECT * FROM `$table` WHERE $where");
+    public function select($table, $data){
+        $where = $this->generalImplodeArray($data);
+        $sql = $this->prepare("SELECT * FROM `$table` WHERE $where");
+        $sql->execute($data);
         return $sql->fetch(PDO::FETCH_OBJ);
     }
 

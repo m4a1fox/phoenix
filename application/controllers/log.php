@@ -12,7 +12,7 @@
             if(isset($_POST['send'])){
                 $this->login = $_POST['login'];
                 $this->pass = Hash::create('md5', $_POST['password'], HASH_KEY);
-                $tr = $this->get_db->select('admin', "`name` = '".$this->login."' AND `pass` = '".$this->pass."'");
+                $tr = $this->get_db->select("`name` = '".$this->login."' AND `pass` = '".$this->pass."'", 'admin');
                 
                 if(is_object($tr)){
                 Session::init();

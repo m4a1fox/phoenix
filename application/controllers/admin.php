@@ -33,4 +33,10 @@
             $this->get_db->delete1(array('id'=>$id), 'content');
             header("Location: /admin");
         }
+        
+        function edit($id){
+            echo $id;
+            $t = $this->get_db->select(array('id'=>$id), 'content');
+            dbg::showPrint($t);
+        }
     }

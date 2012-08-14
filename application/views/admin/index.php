@@ -1,5 +1,17 @@
 <?php foreach ($content as $value):?>
-<span><?php echo $value->id?>:: <?php echo $value->title?></span> || <a href="/admin/delete/<?php echo $value->id?>">delete</a><br />
+<span>
+    <?php echo $value->id?>:: 
+    <?php echo $value->title?>
+</span>
+||
+<a href="/admin/delete/<?php echo $value->id?>">
+    delete
+</a>
+||
+<a href="/admin/edit/<?php echo $value->id?>">
+    edit
+</a>
+<br />
 <?php endforeach;?>
 <form action="/admin/add" method="post">
     <label>Title</label><input type="text" name="title" /><br />
