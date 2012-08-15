@@ -15,11 +15,7 @@ class Content extends Controller{
     }
     
     function show($link='captcha'){
-        
         $data['content'] = $this->get_db->select(array('link'=>$link), 'content');
-        
-        
-
         $this->view('content/index', $data);
     }
 }

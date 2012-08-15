@@ -8,6 +8,7 @@
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
 
     <script>
+         var URL = '<?php echo M4A1_HOST; ?>';
          var currentUrl = '<?php echo $currentUrl; ?>';
     </script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/init.js"></script>

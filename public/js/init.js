@@ -28,11 +28,4 @@ $(document).ready(function(){
     var codeHeight = $("#code").height()
     
     $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'})
-      
-      
-
-    
-    
-    
-    
 })

@@ -1,3 +1,7 @@
+<?php
+    if(!Session::get('login'))
+        header("Location: /");
+?>
 <span id="show-article">press me to show all articles</span>
 <div id="article">
 <?php foreach ($content as $value):?>
@@ -16,14 +20,14 @@
 <br />
 <?php endforeach;?>
 </div>
-<form action="/admin/add" method="post">
+<form action="/admin/add" method="post" id="form-article">
     <label>Title</label><input type="text" name="title" /><br />
     <label>Link</label><input type="text" name="link" /><br />
     <label>Tags</label><input type="text" name="tag" /><br />
     <label>KeyWords</label><input type="text" name="meta_k" /><br />
     <label>Description</label><input type="text" name="meta_d" /><br />
-    <label>Date</label><input type="date" name="date" /><br />
-    <label>Time</label><input type="time" name="time" value="<?php echo date("H:i:s");?>" /><br />
     <label>Content</label><textarea name="content"></textarea><br />
+    <label></label><input type="date" name="date" />
+    <input type="time" name="time" value="<?php echo date("H:i:s"); ?>" />
     <input type="submit" name="send" value="ok" />
 </form>

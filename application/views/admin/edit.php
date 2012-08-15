@@ -5,8 +5,8 @@
     <label>Tags</label><input type="text" name="tag" value="<?php echo $content->tag;?>" /><br />
     <label>KeyWords</label><input type="text" name="meta_k" value="<?php echo $content->meta_k;?>" /><br />
     <label>Description</label><input type="text" name="meta_d" value="<?php echo $content->meta_d;?>" /><br />
-    <label>Date</label><input type="date" name="date" value="<?php echo $content->date;?>" /><br />
-    <label>Time</label><input type="time" name="time" value="<?php echo $content->time;?>" /><br />
     <label>Content</label><textarea name="content"> <?php echo $content->content;?></textarea><br />
+    <label></label><input type="date" name="date" value="<?php echo $content->date; ?>" />
+    <input type="time" name="time" value="<?php echo $content->time; ?>" /><br />
     <input type="submit" name="send" value="ok" />
 </form>
