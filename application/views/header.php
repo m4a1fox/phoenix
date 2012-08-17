@@ -4,8 +4,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST;?>public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />
     <title></title>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
+    <script type="text/javascript" src="<?php echo M4A1_HOST;?>usefull/jqueryFileTree/jqueryFileTree.js"></script>
     <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
 
     <script>
@@ -21,7 +23,6 @@
         }
     }
     ?>
-
 </head>
 <body>
 <div style="height: 7px; background: black; border-bottom: 1px solid #737476; z-index: 99;"></div>

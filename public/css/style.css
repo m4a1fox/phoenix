@@ -118,6 +118,9 @@ a{text-decoration: none; color: inherit;}
 #info{z-index: -1; border: 1px solid black; position: fixed; top: 0; left: 0; width: 200px; height: 100%;}
 #info_content{position: inherit; padding: 10px; color: white; left: 1px;}
 
+#infoRight{z-index: -1;position: fixed; top: 0; right: 0; width: 200px; height: 100%;}
+#info_contentRight{position: inherit; padding: 10px; color: white; }
+
 #transparent {
     opacity:0.2;
     filter:alpha(opacity=20);
@@ -169,3 +172,7 @@ a[type="edit"]{font-weight: bold; color: green;}
 
 #fima name{color: black; padding: 5px 10px; border-radius: 5px; font-size: 20px; background: yellow;}
 #fima name:hover{cursor: default;}
+
+#container_id{margin: 70px 0;}
+
+#file{width: 600px; height: 600px;}
