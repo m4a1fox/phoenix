@@ -26,8 +26,11 @@
     <label>Tags</label><input type="text" name="tag" /><br />
     <label>KeyWords</label><input type="text" name="meta_k" /><br />
     <label>Description</label><input type="text" name="meta_d" /><br />
-    <label>Content</label><textarea name="content"></textarea><br />
+    <label id="label-content">Content</label><textarea name="content" id="text"></textarea><br />
     <label></label><input type="date" name="date" />
     <input type="time" name="time" value="<?php echo date("H:i:s"); ?>" />
     <input type="submit" name="send" value="ok" />
 </form>
+<script type="text/javascript">
+
+</script>

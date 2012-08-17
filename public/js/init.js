@@ -27,5 +27,5 @@ $(document).ready(function(){
     var codeWidth = $("#code").width()
     var codeHeight = $("#code").height()
     
-    $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'})
+    $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'});
 })

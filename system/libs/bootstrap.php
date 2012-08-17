@@ -3,12 +3,10 @@
 class Bootstrap{
 
     function __construct(){
+        
         $url = isset($_GET['url']) ? $_GET['url'] : null;
         $url = rtrim($url, '/');
         $url = explode("/", $url);
-    
-        //print_r($url);
-    
     
         if(empty($url[0])){
             //include './controllers/index.php';
@@ -18,7 +16,8 @@ class Bootstrap{
         }
     
         $file = M4A1_CONTR . $url[0] . '.php';
-        //print_r($file);
+        
+
 
         if(file_exists($file)){
             require $file;
@@ -54,4 +53,5 @@ class Bootstrap{
             }
         }
     }
+    
 }

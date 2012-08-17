@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST;?>public/css/style.css" />
     <title></title>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
+    <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
 
     <script>
          var URL = '<?php echo M4A1_HOST; ?>';

@@ -7,7 +7,7 @@
     <a href="/">radmin</a>
     <a href="/">ladmin</a>
     <a href="/">dadmin</a>
-    <a href="/">fadmin</a>
+    <a href="/fadmin">fadmin</a>
     </label>
 </div>
 <?php endif;?>
