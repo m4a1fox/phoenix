@@ -10,18 +10,14 @@ $(document).ready( function() {
         url: "file.php",
         data: "name="+file,
         success: function(data){
+            $("#fima close").css('visibility', 'visible');
             $("#file").css('display', 'block').val(data)
         }
     });
     
     $("#fima name").append(' <span>'+file+'</span>')
 
-    $("#fima name").hover(function(){
-        
-    })
-
-
-        
+   
     });
     
     $("#fima save").click(function(){
@@ -32,7 +28,7 @@ $(document).ready( function() {
         url: "file.php",
         data: {text: text, file: file}, 
         success: function(data){
-            console.log(data)
+            alert(data)
             }
         });
     })
@@ -60,7 +56,7 @@ $(document).ready( function() {
     
     
     $("#fima close").click(function(){
-        var yes = confirm("Realy close");
+        var yes = confirm("Close file?");
         if(yes){
             $("#file").hide()
             $(this).removeAttr('style');

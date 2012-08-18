@@ -28,4 +28,5 @@ $(document).ready(function(){
     var codeHeight = $("#code").height()
     
     $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'});
+    $('#footer a[href="'+ currentUrl +'"]').css({'background': 'wheat', 'color': 'black'})
 })
