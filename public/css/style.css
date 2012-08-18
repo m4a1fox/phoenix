@@ -171,8 +171,13 @@ a[type="edit"]{font-weight: bold; color: green;}
 #form-login input[type=submit]{width: 80px;}
 
 #fima name{color: black; padding: 5px 10px; border-radius: 5px; font-size: 20px; background: yellow;}
+
 #fima name:hover{cursor: default;}
 
 #container_id{margin: 70px 0;}
 
-#file{width: 600px; height: 600px;}
+#file{width: 580px; height: 600px; padding: 5px 0 0 5px; display: none;}
+
+.save-delete{text-align: right; clear: none;}
+save, delete{visibility: hidden;}
+save:hover, delete:hover{cursor: pointer; color: white;}
