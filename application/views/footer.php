@@ -4,10 +4,10 @@
     <div id="transparent"></div>
     <label id="link">
     <a href="/admin">admin</a>
-    <a href="/">radmin</a>
+    <a href="/fima">fima</a>
     <a href="/">ladmin</a>
     <a href="/">dadmin</a>
-    <a href="/fadmin">fadmin</a>
+    <a href="/editor">editor</a>
     </label>
 </div>
 <?php endif;?>

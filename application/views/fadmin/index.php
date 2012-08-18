@@ -1,10 +1,10 @@
 
 <div id="fima">
     <div style="float: left;">
-        <name>FIMA</name>
+        <name>Edit:</name>
     </div>
     <div class="save">
-        <save>save</save>
+        <save>save</save> | <close>close</close>
     </div>
 <br />
 <div id="infoRight">

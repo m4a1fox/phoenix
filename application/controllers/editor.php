@@ -1,5 +1,5 @@
 <?php
-    class Fadmin extends Controller{
+    class Editor extends Controller{
         public $data = array();
         
         

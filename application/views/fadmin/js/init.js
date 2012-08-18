@@ -2,9 +2,9 @@ $(document).ready( function() {
 
     $('#container_id').fileTree({ root: '/application/', script: 'usefull/jqueryFileTree/connectors/jqueryFileTree.php' }, function(file) {
     
-    console.log(1)
+
     
-    $("#fima name").text('FIMA')
+    $("#fima name").text('Edit:')
     $.ajax({
         type: "POST",
         url: "file.php",
@@ -17,7 +17,7 @@ $(document).ready( function() {
     $("#fima name").append(' <span>'+file+'</span>')
 
     $("#fima name").hover(function(){
-        $("#fima save, delete").css('visibility', 'visible')
+        
     })
 
 
@@ -35,11 +35,38 @@ $(document).ready( function() {
             console.log(data)
             }
         });
-        
-        
-        
-        
-        
     })
+    
+    $("#file").live('keydown', function(e) {
+        $("#fima save, close").css('visibility', 'visible');
+
+        var keyCode = e.keyCode || e.which; 
+
+
+
+        if (keyCode == 9) {
+            var myValue = "\t";
+            var startPos = this.selectionStart;
+            var endPos = this.selectionEnd;
+            var scrollTop = this.scrollTop;
+            this.value = this.value.substring(0, startPos) + myValue + this.value.substring(endPos,this.value.length);
+            this.focus();
+            this.selectionStart = startPos + myValue.length;
+            this.selectionEnd = startPos + myValue.length;
+            this.scrollTop = scrollTop;
+            e.preventDefault(); 
+        }
+    });
+    
+    
+    $("#fima close").click(function(){
+        var yes = confirm("Realy close");
+        if(yes){
+            $("#file").hide()
+            $(this).removeAttr('style');
+            $("#fima save").removeAttr('style');
+        }
+    })
+
 
 }); 

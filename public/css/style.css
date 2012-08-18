@@ -179,5 +179,6 @@ a[type="edit"]{font-weight: bold; color: green;}
 #file{width: 580px; height: 600px; padding: 5px 0 0 5px; display: none;}
 
 .save{text-align: right; clear: none;}
-save{visibility: hidden;}
-save:hover{cursor: pointer; color: white;}
+save, close{visibility: hidden;}
+save:hover{cursor: pointer; color: green;}
+close:hover{cursor: pointer; color: red;}
