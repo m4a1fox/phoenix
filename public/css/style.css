@@ -178,6 +178,6 @@ a[type="edit"]{font-weight: bold; color: green;}
 
 #file{width: 580px; height: 600px; padding: 5px 0 0 5px; display: none;}
 
-.save-delete{text-align: right; clear: none;}
-save, delete{visibility: hidden;}
-save:hover, delete:hover{cursor: pointer; color: white;}
+.save{text-align: right; clear: none;}
+save{visibility: hidden;}
+save:hover{cursor: pointer; color: white;}

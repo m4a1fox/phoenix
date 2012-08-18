@@ -3,8 +3,8 @@
     <div style="float: left;">
         <name>FIMA</name>
     </div>
-    <div class="save-delete">
-        <save>save</save> <delete>| delete</delete>
+    <div class="save">
+        <save>save</save>
     </div>
 <br />
 <div id="infoRight">
