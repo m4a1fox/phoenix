@@ -6,10 +6,10 @@
         function __construct(){
             parent::__construct();
             $this->model('get_db');
-            $this->js = array('views/fadmin/js/init.js');
+            $this->js = array('views/editor/js/init.js');
         }
         
         function Index(){
-            $this->view('fadmin/index');
+            $this->view('editor/index');
         }
     }

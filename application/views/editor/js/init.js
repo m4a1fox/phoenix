@@ -65,6 +65,7 @@ $(document).ready( function() {
             $("#file").hide()
             $(this).removeAttr('style');
             $("#fima save").removeAttr('style');
+            $("#fima name").text('Edit:')
         }
     })
 
