@@ -89,14 +89,13 @@ if(jQuery) (function($){
 //                                            $(this).next().css('visibility', 'hidden')
 //                                        });
                                         
-                                        if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI').hover(function() { 
-                                            var del = $(this).children('img').css('visibility', 'visible')
-                                            del.click(function(){
-                                                console.log(del)
+                                        if(o.folderEvent.toLowerCase != 'click'){    
+                                            $(t).find('li').hover(function(){
+                                                $('> img', this).css('visibility', 'visible');    
+                                            }, function(){
+                                                $('> img', this).css('visibility', 'hidden');    
                                             })
-                                        }, function(){
-                                            $(this).children('img').css('visibility', 'hidden')
-                                        });
+                                        }
 				}
                                 
 				// Loading message

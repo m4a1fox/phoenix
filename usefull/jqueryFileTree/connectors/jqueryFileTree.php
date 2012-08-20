@@ -26,14 +26,14 @@ if( file_exists($root . $_POST['dir']) ) {
 		// All dirs
 		foreach( $files as $file ) {
 			if( file_exists($root . $_POST['dir'] . $file) && $file != '.' && $file != '..' && is_dir($root . $_POST['dir'] . $file) ) {
-				echo "<li class=\"directory collapsed\"><a style='float: left;' href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "/\">" . htmlentities($file) . "</a><img id='delete-img' src='./public/img/delete.png'></li>";
+				echo "<li class=\"directory collapsed\"><a style='float: left;' href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "/\">" . htmlentities($file) . "</a><img class='delete-img' align='center' src='./public/img/delete.png'></li>";
 			}
 		}
 		// All files
 		foreach( $files as $file ) {
 			if( file_exists($root . $_POST['dir'] . $file) && $file != '.' && $file != '..' && !is_dir($root . $_POST['dir'] . $file) ) {
 				$ext = preg_replace('/^.*\./', '', $file);
-				echo "<li class=\"file ext_$ext\"><a style='float: left;' href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "\">" . htmlentities($file) . "</a><img src='./public/img/delete.png'></li>";
+				echo "<li class=\"file ext_$ext\"><a style='float: left;' href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "\">" . htmlentities($file) . "</a><img class='delete-img' align='center' src='./public/img/delete.png'></li>";
 			}
 		}
 		echo "</ul>";	

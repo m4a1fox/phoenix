@@ -29,4 +29,15 @@ $(document).ready(function(){
     
     $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'});
     $('#footer a[href="'+ currentUrl +'"]').css({'background': 'wheat', 'color': 'black'})
+    
+    
+    
+    $('.delete-img').live('click', function(){
+        console.log($(this).parent())
+    })
+    
+
+    
+    
+    
 })
