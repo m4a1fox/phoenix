@@ -78,15 +78,32 @@ if(jQuery) (function($){
 						} else {
 							h($(this).attr('rel'));
 						}
+                                                
 						return false;
 					});
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
+//                                        if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').hover(function() { 
+//                                            $(this).next().css('visibility', 'visible')  
+//                                        }, function(){
+//                                            $(this).next().css('visibility', 'hidden')
+//                                        });
+                                        
+                                        if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI').hover(function() { 
+                                            var del = $(this).children('img').css('visibility', 'visible')
+                                            del.click(function(){
+                                                console.log(del)
+                                            })
+                                        }, function(){
+                                            $(this).children('img').css('visibility', 'hidden')
+                                        });
 				}
+                                
 				// Loading message
 				$(this).html('<ul class="jqueryFileTree start"><li class="wait">' + o.loadMessage + '<li></ul>');
 				// Get the initial file list
 				showTree( $(this), escape(o.root) );
+                                
 			});
 		}
                 

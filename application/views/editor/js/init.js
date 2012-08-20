@@ -1,7 +1,7 @@
 $(document).ready( function() {
 
     $('#container_id').fileTree({ root: '/application/', script: 'usefull/jqueryFileTree/connectors/jqueryFileTree.php' }, function(file) {
-    
+        
 
     
     $("#fima name").text('Edit:')
@@ -12,8 +12,8 @@ $(document).ready( function() {
         success: function(data){
             $("#fima close").css('visibility', 'visible');
             $("#file").css('display', 'block').val(data)
-                
-console.log($("#fima"))
+            
+
         }
         
         
@@ -32,7 +32,7 @@ console.log($("#fima"))
 
    
     });
-    
+
     $("#fima save").click(function(){
         var text = $("#file").val();
         var file = $("#fima name > span").text()
