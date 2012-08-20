@@ -9,6 +9,7 @@
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>usefull/jqueryFileTree/jqueryFileTree.js"></script>
     <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
+    <script src="<?php echo M4A1_HOST;?>usefull/fima/fima.js"></script>
 
     <script>
          var URL = '<?php echo M4A1_HOST; ?>';
@@ -55,7 +56,7 @@
         <?php endforeach;?>
     </div>
 </div>
-    <h1 id="logo"><img src="<?php echo M4A1_HOST;?>public/img/leavse.png"></h1>
+    <h1 id="logo"><a href="/"><img src="<?php echo M4A1_HOST;?>public/img/leavse.png"></a></h1>
     <div id="menu">
         <a href="<?php echo M4A1_HOST;?>">Home</a>
         <a href="<?php echo M4A1_HOST;?>about">About</a>

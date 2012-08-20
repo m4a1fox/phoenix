@@ -7,13 +7,26 @@ $(document).ready( function() {
     $("#fima name").text('Edit:')
     $.ajax({
         type: "POST",
-        url: "file.php",
+        url: "/usefull/file.php",
         data: "name="+file,
         success: function(data){
             $("#fima close").css('visibility', 'visible');
             $("#file").css('display', 'block').val(data)
+                
+console.log($("#fima"))
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
     });
+
+    
     
     $("#fima name").append(' <span>'+file+'</span>')
 
@@ -25,7 +38,7 @@ $(document).ready( function() {
         var file = $("#fima name > span").text()
         $.ajax({
         type: "POST",
-        url: "file.php",
+        url: "/usefull/file.php",
         data: {text: text, file: file}, 
         success: function(data){
             alert(data)

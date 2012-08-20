@@ -6,7 +6,7 @@ if( file_exists($root . $_POST['dir']) ) {
 	$files = scandir($root . $_POST['dir']);
 	natcasesort($files);
 	if( count($files) > 2 ) { /* The 2 accounts for . and .. */
-		echo "<ul>";
+		echo "<ul class=\"fimaFileTree\">";
 		// All dirs
 		foreach( $files as $file ) {
 			if( file_exists($root . $_POST['dir'] . $file) && $file != '.' && $file != '..' && is_dir($root . $_POST['dir'] . $file) ) {
@@ -17,7 +17,7 @@ if( file_exists($root . $_POST['dir']) ) {
 		foreach( $files as $file ) {
 			if( file_exists($root . $_POST['dir'] . $file) && $file != '.' && $file != '..' && !is_dir($root . $_POST['dir'] . $file) ) {
 				$ext = preg_replace('/^.*\./', '', $file);
-				echo "<li><a href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "\">" . htmlentities($file) . "</a></li>";
+				echo "<li class=\"file ext_$ext\"><a href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "\">" . htmlentities($file) . "</a></li>";
 			}
 		}
 		echo "</ul>";	
