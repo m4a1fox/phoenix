@@ -32,7 +32,7 @@ $(document).ready(function(){
     
     
     $('.delete-img').live('click', function(){
-        console.log($(this).parent().parent())
+        console.log($(this).parents('li:first'))
     });
 
     
