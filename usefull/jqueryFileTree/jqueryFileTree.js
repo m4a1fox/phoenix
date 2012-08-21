@@ -59,21 +59,21 @@ if(jQuery) (function($){
 				}
 				
 				function bindTree(t) {
-					$(t).find('LI A').bind(o.folderEvent, function() {
-						if( $(this).parent().hasClass('directory') ) {
-							if( $(this).parent().hasClass('collapsed') ) {
+					$(t).find('LI DIV A').bind(o.folderEvent, function() {
+						if( $(this).parent().parent().hasClass('directory') ) {
+							if( $(this).parent().parent().hasClass('collapsed') ) {
 								// Expand
 								if( !o.multiFolder ) {
 									$(this).parent().parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
 									$(this).parent().parent().find('LI.directory').removeClass('expanded').addClass('collapsed');
 								}
-								$(this).parent().find('UL').remove(); // cleanup
-								showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )) );
-								$(this).parent().removeClass('collapsed').addClass('expanded');
+								$(this).parent().parent().find('UL').remove(); // cleanup
+								showTree( $(this).parent().parent(), escape($(this).attr('rel').match( /.*\// )) );
+								$(this).parent().parent().removeClass('collapsed').addClass('expanded');
 							} else {
 								// Collapse
-								$(this).parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
-								$(this).parent().removeClass('expanded').addClass('collapsed');
+								$(this).parent().parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
+								$(this).parent().parent().removeClass('expanded').addClass('collapsed');
 							}
 						} else {
 							h($(this).attr('rel'));
@@ -82,20 +82,17 @@ if(jQuery) (function($){
 						return false;
 					});
 					// Prevent A from triggering the # on non-click events
-					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
-//                                        if( o.folderEvent.toLowerCase != 'click' ) 
-//                                        $(t).find('LI A').hover(function() { 
-//                                            $(this).next().css('visibility', 'visible')  
-//                                        }, function(){
-//                                            setTimeout(delayFunc,1000); // временная задержка settimeout javascript
-//                                                function delayFunc() {
-//                                                $(t).find('LI A').next().css('visibility', 'hidden')
-//                                            }; // end delayFunc
-//
-//                                            
-//                                        });
-//                                        
+					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI DIV A').bind('click', function() { return false; });
+                                        if( o.folderEvent.toLowerCase != 'click' ){
                                         
+                                        
+                                        $(t).find('DIV').hover(function() { 
+                                            $(this).children('img').css('visibility', 'visible')
+                                        }, function(){
+                                            $(this).children('img').css('visibility', 'hidden')
+                                        });
+//                                        
+                                        }
 				}
                                 
 				// Loading message

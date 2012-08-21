@@ -18,3 +18,25 @@
         </tr>
     </tbody>
 </table>
+
+<?php
+$dir = './application';
+$rdir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir), TRUE);
+foreach ($rdir as $file){
+
+    if($rdir->callHasChildren()){
+         if(substr($file, -1) != '.' && substr($file, -1) != '..'){
+           echo str_repeat('|_', $rdir->getDepth()).$file.'<br>';  
+        }
+    }else{
+
+        if(substr($file, -1) != '.' && substr($file, -1) != '..'){
+           echo '<li>'.str_repeat('&CenterDot;', $rdir->getDepth()).$file.'</li>';  
+        }
+          
+    }
+}
+
+
+
+?>
