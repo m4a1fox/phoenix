@@ -31,10 +31,15 @@ $(document).ready(function(){
     $('#footer a[href="'+ currentUrl +'"]').css({'background': 'wheat', 'color': 'black'})
     
     
+//    $('.delete-img').live({
+//        mouseenter: function(){
+//            $(this).parent()
+//        },mouseleave: function(){
+//            console.log($(this).css('visibility', 'hidden'))
+//        }
+//    });
+
     
-    $('.delete-img').live('click', function(){
-        console.log($(this).parent())
-    })
     
 
     

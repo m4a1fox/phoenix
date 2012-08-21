@@ -1,6 +1,6 @@
 UL.jqueryFileTree {
 	font-family: Verdana, sans-serif;
-	font-size: 11px;
+	font-size: 14px;
 	line-height: 18px;
 	padding: 0px;
 	margin: 0;
@@ -10,7 +10,7 @@ UL.jqueryFileTree LI {
 	list-style: none;
 	padding: 0px;
 	padding-left: 20px;
-	margin: 0px;
+	margin: 10px;
 	white-space: nowrap;
 }
 
@@ -27,6 +27,7 @@ UL.jqueryFileTree A:hover {
 
 UL.jqueryFileTree A:hover {
 	background: #BDF;
+        z-index: -99;
 }
 
 /* Core Styles */

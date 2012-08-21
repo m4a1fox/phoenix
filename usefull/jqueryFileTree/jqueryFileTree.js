@@ -83,19 +83,19 @@ if(jQuery) (function($){
 					});
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').bind('click', function() { return false; });
-//                                        if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI A').hover(function() { 
+//                                        if( o.folderEvent.toLowerCase != 'click' ) 
+//                                        $(t).find('LI A').hover(function() { 
 //                                            $(this).next().css('visibility', 'visible')  
 //                                        }, function(){
-//                                            $(this).next().css('visibility', 'hidden')
+//                                            setTimeout(delayFunc,1000); // временная задержка settimeout javascript
+//                                                function delayFunc() {
+//                                                $(t).find('LI A').next().css('visibility', 'hidden')
+//                                            }; // end delayFunc
+//
+//                                            
 //                                        });
+//                                        
                                         
-                                        if(o.folderEvent.toLowerCase != 'click'){    
-                                            $(t).find('li').hover(function(){
-                                                $('> img', this).css('visibility', 'visible');    
-                                            }, function(){
-                                                $('> img', this).css('visibility', 'hidden');    
-                                            })
-                                        }
 				}
                                 
 				// Loading message

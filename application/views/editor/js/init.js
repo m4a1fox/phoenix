@@ -68,6 +68,7 @@ $(document).ready( function() {
     });
     
     
+    
     $("#fima close").click(function(){
         var yes = confirm("Close file?");
         if(yes){
