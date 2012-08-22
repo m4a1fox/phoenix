@@ -60,20 +60,20 @@ if(jQuery) (function($){
 				
 				function bindTree(t) {
 					$(t).find('LI DIV A').bind(o.folderEvent, function() {
-						if( $(this).parent().parent().hasClass('directory') ) {
-							if( $(this).parent().parent().hasClass('collapsed') ) {
+						if( $(this).parents('li:first').hasClass('directory') ) {
+							if( $(this).parents('li:first').hasClass('collapsed') ) {
 								// Expand
 								if( !o.multiFolder ) {
-									$(this).parent().parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
-									$(this).parent().parent().find('LI.directory').removeClass('expanded').addClass('collapsed');
+									$(this).parents('li:first').find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
+									$(this).parents('li:first').find('LI.directory').removeClass('expanded').addClass('collapsed');
 								}
-								$(this).parent().parent().find('UL').remove(); // cleanup
-								showTree( $(this).parent().parent(), escape($(this).attr('rel').match( /.*\// )) );
-								$(this).parent().parent().removeClass('collapsed').addClass('expanded');
+								$(this).parents('li:first').find('UL').remove(); // cleanup
+								showTree( $(this).parents('li:first'), escape($(this).attr('rel').match( /.*\// )) );
+								$(this).parents('li:first').removeClass('collapsed').addClass('expanded');
 							} else {
 								// Collapse
-								$(this).parent().parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
-								$(this).parent().parent().removeClass('expanded').addClass('collapsed');
+								$(this).parents('li:first').find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
+								$(this).parents('li:first').removeClass('expanded').addClass('collapsed');
 							}
 						} else {
 							h($(this).attr('rel'));
@@ -82,7 +82,8 @@ if(jQuery) (function($){
 						return false;
 					});
 					// Prevent A from triggering the # on non-click events
-					if( o.folderEvent.toLowerCase != 'click' ) $(t).find('LI DIV A').bind('click', function() { return false; });
+					if( o.folderEvent.toLowerCase != 'click' ) 
+                                            $(t).find('LI DIV A').bind('click', function() { return false; });
                                         if( o.folderEvent.toLowerCase != 'click' ){
                                         
                                         
