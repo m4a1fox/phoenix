@@ -293,3 +293,27 @@ UL.fimaFileTree A:hover {
 .fimaFileTree LI.ext_xls { background: url(/usefull/fima/img/xls.png) left top no-repeat; }
 .fimaFileTree LI.ext_xml { background: url(/usefull/fima/img/code.png) left top no-repeat; }
 .fimaFileTree LI.ext_zip { background: url(/usefull/fima/img/zip.png) left top no-repeat; }
+
+.file-folder{
+    display: none;
+    width: 100px;
+    position: absolute;
+    background: gray;
+    color: white;
+}
+
+.file-folder ul{
+    margin: 0px;
+    width: 100%;
+}
+
+.file-folder ul li{
+    border: 1px solid red;
+
+    overflow: hidden;
+    margin: 0px;
+}
+
+.file-folder li:hover{
+    background: gainsboro;
+}

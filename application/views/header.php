@@ -62,7 +62,7 @@
         <a href="<?php echo M4A1_HOST;?>about">About</a>
         <a href="<?php echo M4A1_HOST;?>mail">Mail</a>
         <a href="<?php echo M4A1_HOST;?>ex">EX</a>   
-        <?php if(!isset($_SESSION['login'])):?>
+        <?php if(Session::get('login')):?>
             <a href="<?php echo M4A1_HOST;?>log/in">log In</a>
         <?php else:?>
             <a href="<?php echo M4A1_HOST;?>log/out">log Out</a>

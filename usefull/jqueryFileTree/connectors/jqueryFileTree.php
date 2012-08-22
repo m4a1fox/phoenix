@@ -26,7 +26,7 @@ if( file_exists($root . $_POST['dir']) ) {
 		// All dirs
 		foreach( $files as $file ) {
 			if( file_exists($root . $_POST['dir'] . $file) && $file != '.' && $file != '..' && is_dir($root . $_POST['dir'] . $file) ) {
-				echo "<li class=\"directory collapsed\"><div><a style='float: left;' href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "/\">" . htmlentities($file) . "</a><img class='delete-img' align='center' src='./public/img/delete.png'></div></li>";
+				echo "<li class=\"directory collapsed\"><div class='delete-add'><a style='float: left;' href=\"#\" rel=\"" . htmlentities($_POST['dir'] . $file) . "/\">" . htmlentities($file) . "</a><img class='delete-img' align='center' src='./public/img/delete.png'> <img class='add-img' align='center' src='./public/img/add.png'><div class='file-folder'><ul><li>file</li><li>folder</li></ul></div></div></li>";
 			}
 		}
 		// All files

@@ -2,35 +2,18 @@ $(document).ready( function() {
 
     $('#container_id').fileTree({ root: '/application/', script: 'usefull/jqueryFileTree/connectors/jqueryFileTree.php' }, function(file) {
         
+        $("#fima name").text('Edit:')
+        $.ajax({
+            type: "POST",
+            url: "/usefull/file.php",
+            data: "name="+file,
+            success: function(data){
+                $("#fima close").css('visibility', 'visible');
+                $("#file").css('display', 'block').val(data)
+            }
+       });
 
-    
-    $("#fima name").text('Edit:')
-    $.ajax({
-        type: "POST",
-        url: "/usefull/file.php",
-        data: "name="+file,
-        success: function(data){
-            $("#fima close").css('visibility', 'visible');
-            $("#file").css('display', 'block').val(data)
-            
-
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    });
-
-    
-    
-    $("#fima name").append(' <span>'+file+'</span>')
-
-   
+        $("#fima name").append(' <span>'+file+'</span>')
     });
 
     $("#fima save").click(function(){
@@ -50,9 +33,6 @@ $(document).ready( function() {
         $("#fima save, close").css('visibility', 'visible');
 
         var keyCode = e.keyCode || e.which; 
-
-
-
         if (keyCode == 9) {
             var myValue = "\t";
             var startPos = this.selectionStart;
@@ -78,6 +58,45 @@ $(document).ready( function() {
             $("#fima name").text('Edit:')
         }
     })
+    
+    
+    
+
+    
+    
+    
+    
+    $(".add-img").live('click', function(){
+        
+        
+        
+        $(this).next().show()
+        
+        
+        
+        
+        
+//        var folderParent = $(this).parent().children('a').attr('rel');        
+//        var folderNew = prompt("Folder name.");
+//        
+//        if(folderNew != null && folderNew.length > 2){
+//            $.ajax({
+//            type: "POST",
+//            url: "/usefull/file.php",
+//            data: {folderParent: folderParent, folderNew: folderNew}, 
+//            success: function(data){
+//                console.log(data)
+//                }
+//            });
+//        }
+
+    })
+    
+        
+    $('.delete-img').live('click', function(){
+        console.log($(this).parents('li:first'))
+    });
+
 
 
 }); 

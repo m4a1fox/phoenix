@@ -88,9 +88,9 @@ if(jQuery) (function($){
                                         
                                         
                                         $(t).find('DIV').hover(function() { 
-                                            $(this).children('img').css('visibility', 'visible')
+                                            $(this).children('img').css('visibility', 'visible');
                                         }, function(){
-                                            $(this).children('img').css('visibility', 'hidden')
+                                            $(this).children('img, div').css('visibility', 'hidden')
                                         });
 //                                        
                                         }

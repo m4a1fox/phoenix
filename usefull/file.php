@@ -15,3 +15,17 @@ if(isset($_POST['text'])){
         echo 'File '.$_POST['file'] .' is saved!';
     }
 }
+
+if(isset($_POST['folderParent'])){
+    
+    $folderParent = $_POST['folderParent'];
+    $folderNew = $_POST['folderNew'];
+    
+    $req = mkdir($root.$folderParent.$folderNew, 0766, TRUE);
+    
+    if($req){
+        echo 'folder '.$folderNew. ' sucssefuly created';
+    }
+    
+    
+}

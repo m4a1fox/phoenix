@@ -6,7 +6,7 @@ UL.jqueryFileTree {
 	margin: 0;
 }
 
-UL.jqueryFileTree LI {
+UL.jqueryFileTree > LI {
 	list-style: none;
 	padding: 0px;
 	padding-left: 20px;
@@ -96,3 +96,4 @@ UL.jqueryFileTree A:hover {
 .jqueryFileTree LI.ext_zip { background: url(images/zip.png) left top no-repeat; }
 
 .delete-img{visibility: hidden; cursor: pointer;}
+.add-img{visibility: hidden; cursor: pointer;}
