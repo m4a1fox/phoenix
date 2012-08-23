@@ -294,8 +294,13 @@ UL.fimaFileTree A:hover {
 .fimaFileTree LI.ext_xml { background: url(/usefull/fima/img/code.png) left top no-repeat; }
 .fimaFileTree LI.ext_zip { background: url(/usefull/fima/img/zip.png) left top no-repeat; }
 
+
+.delete-img{visibility: hidden; cursor: pointer;}
+.add-img{visibility: hidden; cursor: pointer;}
+
 .file-folder{
-    display: none;
+    visibility: hidden; 
+    cursor: pointer;
     width: 100px;
     position: absolute;
     background: gray;

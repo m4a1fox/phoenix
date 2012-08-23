@@ -62,15 +62,27 @@ $(document).ready( function() {
     
     
 
+    $("#container_id > ul li div").live('hover', function(event){
+
+        if(event.type == 'mouseenter'){
+            $(this).find('img').css({'visibility': 'visible'})
+        }else{
+            $(this).find('img').css({'visibility': 'hidden'})
+            $(this).find('div').css({'visibility': 'hidden'})
+        }
+    })
     
     
     
-    
-    $(".add-img").live('click', function(){
+    $(".add-img").live('click', function(event){
         
+        console.log(event)
         
-        
-        $(this).next().show()
+//        if(event.type == 'mouseenter'){
+            $(this).next().css({'visibility': 'visible'})
+//        }else{
+//            $(this).next().css({'visibility': 'hidden'})
+//        }
         
         
         
@@ -99,4 +111,4 @@ $(document).ready( function() {
 
 
 
-}); 
+});

@@ -84,16 +84,16 @@ if(jQuery) (function($){
 					// Prevent A from triggering the # on non-click events
 					if( o.folderEvent.toLowerCase != 'click' ) 
                                             $(t).find('LI DIV A').bind('click', function() { return false; });
-                                        if( o.folderEvent.toLowerCase != 'click' ){
-                                        
-                                        
-                                        $(t).find('DIV').hover(function() { 
-                                            $(this).children('img').css('visibility', 'visible');
-                                        }, function(){
-                                            $(this).children('img, div').css('visibility', 'hidden')
-                                        });
+//                                        if( o.folderEvent.toLowerCase != 'click' ){
 //                                        
-                                        }
+//                                        
+//                                        $(t).find('DIV').hover(function() { 
+//                                            $(this).children('img').css('visibility', 'visible');
+//                                        }, function(){
+//                                            $(this).children('img, div').css('visibility', 'hidden')
+//                                        });
+////                                        
+//                                        }
 				}
                                 
 				// Loading message
