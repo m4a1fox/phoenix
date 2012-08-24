@@ -9,7 +9,6 @@ class Index extends Controller{
     
     function index(){
         $data = array();
-        
         $this->view('index/index', $data);
     }
 }

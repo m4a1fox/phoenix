@@ -43,6 +43,7 @@
 <div id="info">
     <div id="transparent"></div>
     <div id="info_content">
+        <ul>
         <?php
             $link = new shortlink();
             $link = $link->allLink();
@@ -54,6 +55,7 @@
                 </a>
             </li>
         <?php endforeach;?>
+        </ul>
     </div>
 </div>
     <h1 id="logo"><a href="/"><img src="<?php echo M4A1_HOST;?>public/img/leavse.png"></a></h1>

@@ -62,53 +62,5 @@ $(document).ready( function() {
     
     
 
-    $("#container_id > ul li div").live('hover', function(event){
-
-        if(event.type == 'mouseenter'){
-            $(this).find('img').css({'visibility': 'visible'})
-        }else{
-            $(this).find('img').css({'visibility': 'hidden'})
-            $(this).find('div').css({'visibility': 'hidden'})
-        }
-    })
-    
-    
-    
-    $(".add-img").live('click', function(event){
-        
-        console.log(event)
-        
-//        if(event.type == 'mouseenter'){
-            $(this).next().css({'visibility': 'visible'})
-//        }else{
-//            $(this).next().css({'visibility': 'hidden'})
-//        }
-        
-        
-        
-        
-        
-//        var folderParent = $(this).parent().children('a').attr('rel');        
-//        var folderNew = prompt("Folder name.");
-//        
-//        if(folderNew != null && folderNew.length > 2){
-//            $.ajax({
-//            type: "POST",
-//            url: "/usefull/file.php",
-//            data: {folderParent: folderParent, folderNew: folderNew}, 
-//            success: function(data){
-//                console.log(data)
-//                }
-//            });
-//        }
-
-    })
-    
-        
-    $('.delete-img').live('click', function(){
-        console.log($(this).parents('li:first'))
-    });
-
-
 
 });

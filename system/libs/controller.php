@@ -25,14 +25,14 @@ class Controller{
      */
     
     public function __construct(){
-        $this->load = new Load();
+//        $this->load = new Load();
     }  
 
        
     
         function model($name){
-        return $this->loadClass($name);
-    }
+            return $this->loadClass($name);
+        }
     
 
     
@@ -82,11 +82,12 @@ class Controller{
     }
     
     function loadClass($name, $const = M4A1_MODELS){
+        
          $file = $const . $name . '.php';
             if(file_exists($file)){
                 $this->$name = new $name();
             }else{
-                exception_handler('Такой модели не существует: <strong>'.$name.'</strong>');
+                exception_handler(new Exception('Такой модели не существует: <strong>'.$name.'</strong>'), viewIsNotExistInClass($file));
                 exit();
             }    
     }

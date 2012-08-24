@@ -6,7 +6,7 @@ UL.jqueryFileTree {
 	margin: 0;
 }
 
-UL.jqueryFileTree > LI {
+UL.jqueryFileTree LI {
 	list-style: none;
 	padding: 0px;
 	padding-left: 20px;

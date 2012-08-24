@@ -1,11 +1,10 @@
 <?php
     class Editor extends Controller{
-        public $data = array();
-        
-        
+
         function __construct(){
             parent::__construct();
-            $this->model('get_db');
+            $this->model('get_db'); // Вызывается внутрення модель. Кот. создается админом
+            $this->library('window'); // Вызывается класс созданный создателем LEAVSE.
             $this->js = array('views/editor/js/init.js');
         }
         

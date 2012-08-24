@@ -8,7 +8,7 @@ class About extends Controller{
     }
     
     function index($id=1){
-        $this->load->model('get_db');
+//        $this->load->model('get_db');
         
             $config['id'] = $id;
             $config['link'] = M4A1_HOST.strtolower(__CLASS__).'/page/';

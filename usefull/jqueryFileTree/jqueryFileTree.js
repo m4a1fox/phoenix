@@ -59,21 +59,21 @@ if(jQuery) (function($){
 				}
 				
 				function bindTree(t) {
-					$(t).find('LI DIV A').bind(o.folderEvent, function() {
-						if( $(this).parents('li:first').hasClass('directory') ) {
-							if( $(this).parents('li:first').hasClass('collapsed') ) {
+					$(t).find('LI A').bind(o.folderEvent, function() {
+						if( $(this).parent().hasClass('directory') ) {
+							if( $(this).parent().hasClass('collapsed') ) {
 								// Expand
 								if( !o.multiFolder ) {
-									$(this).parents('li:first').find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
-									$(this).parents('li:first').find('LI.directory').removeClass('expanded').addClass('collapsed');
+									$(this).parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
+									$(this).parent().find('LI.directory').removeClass('expanded').addClass('collapsed');
 								}
-								$(this).parents('li:first').find('UL').remove(); // cleanup
-								showTree( $(this).parents('li:first'), escape($(this).attr('rel').match( /.*\// )) );
-								$(this).parents('li:first').removeClass('collapsed').addClass('expanded');
+								$(this).parent().find('UL').remove(); // cleanup
+								showTree( $(this).parent(), escape($(this).attr('rel').match( /.*\// )) );
+								$(this).parent().removeClass('collapsed').addClass('expanded');
 							} else {
 								// Collapse
-								$(this).parents('li:first').find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
-								$(this).parents('li:first').removeClass('expanded').addClass('collapsed');
+								$(this).parent().find('UL').slideUp({ duration: o.collapseSpeed, easing: o.collapseEasing });
+								$(this).parent().removeClass('expanded').addClass('collapsed');
 							}
 						} else {
 							h($(this).attr('rel'));
@@ -82,18 +82,9 @@ if(jQuery) (function($){
 						return false;
 					});
 					// Prevent A from triggering the # on non-click events
-					if( o.folderEvent.toLowerCase != 'click' ) 
-                                            $(t).find('LI DIV A').bind('click', function() { return false; });
-//                                        if( o.folderEvent.toLowerCase != 'click' ){
+					if( o.folderEvent.toLowerCase != 'click' )
+                                            $(t).find('LI A').bind('click', function() { return false; });
 //                                        
-//                                        
-//                                        $(t).find('DIV').hover(function() { 
-//                                            $(this).children('img').css('visibility', 'visible');
-//                                        }, function(){
-//                                            $(this).children('img, div').css('visibility', 'hidden')
-//                                        });
-////                                        
-//                                        }
 				}
                                 
 				// Loading message
