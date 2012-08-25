@@ -26,7 +26,7 @@ class Paginator{
     
     function pageCount(){
     	if($this->countRow > 0)
-        	return ceil($this->countRow/$this->per_page);
+            return ceil($this->countRow/$this->per_page);
         else
             return 1;
     }

@@ -7,29 +7,24 @@ class About extends Controller{
         $this->model('get_db');
     }
     
-    function index($id=1){
-//        $this->load->model('get_db');
-        
+    function Index($id=1){
+            $this->library('paginator');
+            $this->model('get_db');
+
             $config['id'] = $id;
             $config['link'] = M4A1_HOST.strtolower(__CLASS__).'/page/';
             $config['table'] = 'user';
             $config['per_page'] = 5;
-            $config['countRow'] = Registry::get('DB')->query("SELECT COUNT(*) FROM `user`")->fetchColumn();
 
+            $this->paginator->initialize($config);
+            $data['result'] = $this->paginator->getPage('', 'ORDER BY `id` DESC');
+            $data['number'] = $this->paginator->paginate();
 
-        $this->paginator->initialize($config);
-       
-        $data['welcome'] = $this->paginator->getPage('', 'ORDER BY `id` DESC');
-        
-       
-        
+            $this->view('about/index', $data);
+            
+	   }
 
-        
-        
-        
-        $this->view('about/index', $data);
-        
-    }
+	
     
     function add(){
         if (isset($_POST['send'])) {

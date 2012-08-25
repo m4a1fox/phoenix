@@ -1,0 +1,22 @@
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getCode() on a non-object in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 13, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   3. Mail->Index() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:48, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   4. Controller->view() /home/maxim/workspace/phoenix/application/controllers/mail.php:38, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   5. require() /home/maxim/workspace/phoenix/system/libs/controller.php:48, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   6. autoload() /home/maxim/workspace/phoenix/system/libs/controller.php:0, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   7. exception_handler() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:10, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   8. M4A1_Exception->php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:22, referer: http://phoenix.local/
+[Sat Aug 25 16:06:02 2012] [error] [client 127.0.0.1] PHP   9. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getCode() on a non-object in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 13, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   3. Mail->Index() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:48, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   4. Controller->view() /home/maxim/workspace/phoenix/application/controllers/mail.php:38, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   5. require() /home/maxim/workspace/phoenix/system/libs/controller.php:48, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   6. autoload() /home/maxim/workspace/phoenix/system/libs/controller.php:0, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   7. exception_handler() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:10, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   8. M4A1_Exception->php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:22, referer: http://phoenix.local/
+[Sat Aug 25 16:07:11 2012] [error] [client 127.0.0.1] PHP   9. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/

@@ -1,26 +1,45 @@
 <?php
 	class Mail extends Controller{
+
+            
+            
+            function __construct() {
+                parent::__construct();
+                $this->library('sendmail');
+               
+            }
+            
+            
 	   
-	   function Index($id=1){
-            $this->library('paginator');
-            $this->model('get_db');
-
-            $config['id'] = $id;
-            $config['link'] = M4A1_HOST.strtolower(__CLASS__).'/page/';
-            $config['table'] = 'user';
-            $config['per_page'] = 5;
-
-            $this->paginator->initialize($config);
-            $data['result'] = $this->paginator->getPage('', 'ORDER BY `id` DESC');
-            $data['number'] = $this->paginator->paginate();
-
-            $this->view('mail/index', $data);
+	   function Index(){
+               
+               $data['mail_name'] = 'test_name';
+               $data['mail_to'] = 'm4a1fox@mail.ru';
+               $data['mail_from'] = 'test_from';
+               $data['mail_subject'] = 'test_subj';
+               $data['mail_body'] = 'test_body';
+               
+               
+               
+               
+               
+               
+               
+               
+               $this->sendmail->initialize($data);
+               
+               
+               
+               
+               
+               
+               
+               
+               $this->view('mail/index');
             
 	   }
        
-        public function page($id=1){
-            $this->Index(!empty($id)?$id:1);
-        }
+
 	}
 	
 ?>
