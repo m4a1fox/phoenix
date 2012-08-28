@@ -2,7 +2,7 @@
 
 class M4A1_Exception{
 
-    var $levels = array(
+    public static $levels = array(
                         E_ERROR			=>	'Error',
                         E_WARNING		=>	'Warning',
                         E_PARSE			=>	'Parsing Error',
@@ -17,19 +17,19 @@ class M4A1_Exception{
                         E_STRICT		=>	'Runtime Notice'
                         );
 
-    public function __construct(){}
+//    public function __construct(){}
    
    
-    public function php_error_variable($code = 0, $message, $file = '', $line = 0){
-        $info = ( ! isset($this->levels[$code])) ? $code : $this->levels[$code];    
+    public static function php_error_variable($code = 0, $message, $file = '', $line = 0){
+        $info = ( ! isset(self::$levels[$code])) ? $code : self::$levels[$code];    
         include M4A1_ROOT . './system/errors/var_error.php';
     }
    
-    public function php_error($expClass, $myMessage){
+    public static function php_error($expClass, $myMessage){
         include M4A1_ROOT . './system/errors/exc_error.php';
     }
    
-    public function exception_error($expClass, $myMessage){
+    public static function exception_error($expClass, $myMessage){
         include M4A1_ROOT . './system/errors/pdo_error.php';
     }
 }

@@ -70,3 +70,10 @@
             <a href="<?php echo M4A1_HOST;?>log/out">log Out</a>
         <?php endif;?>
     </div>
+    
+    <?php
+    
+    $t = new Abo();
+    
+    
+    ?>

@@ -7,6 +7,7 @@ require './system/config/database.php';
         header("Location: ./");
     }
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>

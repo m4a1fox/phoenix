@@ -22,7 +22,7 @@ class Bootstrap{
         if(file_exists($file)){
             require $file;
         }else{
-           exception_handler(new Exception('View is not exists'), viewIsNotExistInClass($file));
+           M4A1_Exception::php_error(new Exception('View is not exists'), viewIsNotExistInClass($file));
            exit();
         }
        
@@ -32,7 +32,7 @@ class Bootstrap{
             if(method_exists($controller, $url[1])){
                 $controller->{$url[1]}($url[2]);
             }else{
-                exception_handler(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
+                M4A1_Exception::php_error(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
                 exit();
             }
         }else{
@@ -40,8 +40,9 @@ class Bootstrap{
                 if(method_exists($controller, $url[1])){
                     $controller->{$url[1]}();
                 }else{
-                    exception_handler(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
-                    exit();
+                    M4A1_Exception::php_error(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
+//                    exception_handler(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
+//                    exit();
                 }
             }else{
                 if(method_exists($controller, 'index')){
