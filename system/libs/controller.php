@@ -38,18 +38,18 @@ class Controller{
     
     
         
-	public function view($name, $data=array(), $noInclude = false){
-            if(file_exists(M4A1_VIEWS . $name . '.php')){
+	public function view($file, $data=array(), $noInclude = false){
+            if(file_exists(M4A1_VIEWS . $file . '.php')){
                 extract($data);
                 if($noInclude){
-                        require M4A1_VIEWS . $name . '.php';
+                        require M4A1_VIEWS . $file . '.php';
                 }else{
                         require M4A1_VIEWS . 'header.php';
-                        require M4A1_VIEWS . $name . '.php';
+                        require M4A1_VIEWS . $file . '.php';
                         require M4A1_VIEWS . 'footer.php';
                 }
             }else{
-                exception_handler('Исключение в виде. Файл <strong>'.$name.'.php</strong> не существует!');
+                M4A1_Exception::php_error(new Exception('View is not exists'), viewIsNotExistInClass($file));
                 exit();
             }
 	}

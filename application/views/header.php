@@ -63,17 +63,11 @@
         <a href="<?php echo M4A1_HOST;?>">Home</a>
         <a href="<?php echo M4A1_HOST;?>about">About</a>
         <a href="<?php echo M4A1_HOST;?>mail">Mail</a>
-        <a href="<?php echo M4A1_HOST;?>ex">EX</a>   
+        <a href="<?php echo M4A1_HOST;?>ex">EX</a>
+        <a href="<?php echo M4A1_HOST;?>folio">folio</a>
         <?php if(!Session::get('login')):?>
             <a href="<?php echo M4A1_HOST;?>log/in">log In</a>
         <?php else:?>
             <a href="<?php echo M4A1_HOST;?>log/out">log Out</a>
         <?php endif;?>
     </div>
-    
-    <?php
-    
-    $t = new Abo();
-    
-    
-    ?>

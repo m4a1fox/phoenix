@@ -1,4 +1,4 @@
-*{font-family: Vardana, sans-serif; margin:0px auto; padding: 0;}
+*{font-family: Vardana, sans-serif; margin: 0px auto; padding: 0;}
 html{height:100%; background: url('../img/bg.jpg');}
 
 body{
@@ -9,7 +9,7 @@ body{
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     color: #8b8b8b;
-    min-height:100%; position:relative; min-width:800px; background: url('../img/bg_main.jpg')  50% 0 no-repeat; z-index: -2;
+    min-height:100%; position:relative; min-width: 800px; background: url('../img/bg_main.jpg')  50% 0 no-repeat; z-index: -2;
 }
 
 * html body{height:100%;}
@@ -20,7 +20,7 @@ a{text-decoration: none; color: inherit;}
     font-size: 14px;
     line-height: 50px;
     padding: 12px 20px 12px 19px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 5px;
     color: white;
     font-weight: bold;

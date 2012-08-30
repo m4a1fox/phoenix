@@ -54,4 +54,13 @@
             $data['content'] = $this->get_db->select(array('id'=>$id), 'content');
             $this->view('admin/edit', $data);
         }
+        
+        function show($page = '123'){
+            
+            
+            
+            
+            $this->view('admin/cadmin/index');
+            
+        }
     }
