@@ -55,12 +55,10 @@
             $this->view('admin/edit', $data);
         }
         
-        function show($page = '123'){
+        function show($page = 'admin'){
             
-            
-            
-            
-            $this->view('admin/cadmin/index');
+            $t = new $page();
+            $t->Index();
             
         }
     }

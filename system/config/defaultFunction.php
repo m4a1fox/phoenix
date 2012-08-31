@@ -7,8 +7,8 @@ function autoload($className) {
     }elseif(file_exists(M4A1_MODELS . strtolower($className) . '.php')){
         include M4A1_MODELS . strtolower($className) . '.php';
     }else{
-        exception_handler('Класс '.$className.' не найден');
-        exit();
+//        exception_handler('Класс '.$className.' не найден');
+//        exit();
     }
 }
 

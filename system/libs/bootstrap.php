@@ -2,6 +2,9 @@
 
 class Bootstrap{
 
+    public $fileName;
+    public $dir;
+    
     function __construct(){
         
         $url = isset($_GET['url']) ? $_GET['url'] : null;
@@ -14,10 +17,18 @@ class Bootstrap{
             $controller->index();
             return false;
         }
-    
-        $file = M4A1_CONTR . $url[0] . '.php';
+        
+        $file = $this->findFile($url[0]);
         
 
+        
+        
+        
+        
+        
+//        $file = M4A1_CONTR . $url[0] . '.php';
+        
+        
 
         if(file_exists($file)){
             require $file;
@@ -54,5 +65,26 @@ class Bootstrap{
             }
         }
     }
+    
+        /**
+     * 
+     * @param type $file // file name
+     * @return type realpath to contr.
+     * methods: $this->dir->getSubPathName()    - return path to file, together with directory, if file is in
+     *          $this->dir->getFilename()       - return filename
+     *          $this->dir->getSubPath()        - return folder in wich file is
+     *          $this->dir->key()               - real path to file
+     */
+    
+    public function findFile($file){
+        $this->fileName = $file;
+        $this->dir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(M4A1_CONTR), TRUE);
+        while($this->dir->valid()) {
+            if (!$this->dir->isDot() && $this->dir->getFilename() == $this->fileName.'.php') 
+                    return $this->dir->key();
+            $this->dir->next();
+        }
+    }
+    
     
 }
