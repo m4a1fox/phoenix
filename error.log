@@ -230,3 +230,28 @@
 [Thu Aug 30 19:30:58 2012] [error] [client 127.0.0.1] PHP   5. exception_handler() /home/maxim/workspace/phoenix/system/libs/controller.php:53, referer: http://phoenix.local/
 [Thu Aug 30 19:30:58 2012] [error] [client 127.0.0.1] PHP   6. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:20, referer: http://phoenix.local/
 [Thu Aug 30 19:30:58 2012] [error] [client 127.0.0.1] PHP   7. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/
+[Sat Sep 01 17:16:36 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'ladmin' not found in /home/maxim/workspace/phoenix/application/controllers/admin/admin.php on line 60, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:16:36 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:16:36 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:16:36 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:16:36 2012] [error] [client 127.0.0.1] PHP   3. Admin->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:44, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:17:31 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'ladmin' not found in /home/maxim/workspace/phoenix/application/controllers/admin/admin.php on line 60, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:17:31 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:17:31 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:17:31 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:17:31 2012] [error] [client 127.0.0.1] PHP   3. Admin->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:44, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:18:00 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'ladmin' not found in /home/maxim/workspace/phoenix/application/controllers/admin/admin.php on line 60, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:18:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:18:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:18:00 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:18:00 2012] [error] [client 127.0.0.1] PHP   3. Admin->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:44, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:20 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'ladmin' not found in /home/maxim/workspace/phoenix/application/controllers/admin/admin.php on line 60, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:20 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:20 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:20 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:20 2012] [error] [client 127.0.0.1] PHP   3. Admin->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:45, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'ladmin' not found in /home/maxim/workspace/phoenix/application/controllers/admin/admin.php on line 60, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/ladmin/edit/7
+[Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP   3. Admin->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:45, referer: http://phoenix.local/ladmin/edit/7

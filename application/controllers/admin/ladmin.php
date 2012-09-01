@@ -50,10 +50,10 @@ class Ladmin extends Controller{
                     'content'=>$_POST['content'],
                     'link'=>$_POST['link'],
                     ), 'content');
-                header("Location: /admin/show/ladmin");
+                header("Location: /ladmin");
             }
             $data['content'] = $this->get_db->select(array('id'=>$id), 'content');
-            $this->view('/ladmin/edit', $data);
+            $this->view('/admin/ladmin/edit', $data);
         }
     
 }
