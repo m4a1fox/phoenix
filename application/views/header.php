@@ -5,7 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST;?>public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />
-    <title></title>
+    <title>
+    <?php
+        
+        echo $title;
+        
+    ?>
+    </title>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>usefull/jqueryFileTree/jqueryFileTree.js"></script>
     <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
@@ -42,8 +48,10 @@
 
 <div id="info">
     <div id="transparent"></div>
+    
     <div id="info_content">
         <ul>
+        <li>structure</li>
         <?php
             $link = new shortlink();
             $link = $link->allLink();

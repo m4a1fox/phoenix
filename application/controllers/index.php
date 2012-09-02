@@ -7,8 +7,9 @@ class Index extends Controller{
         $this->model('get_db');
     }
     
-    function index(){
+    function Index(){
         $data = array();
+        $data['title'] = 'Home';
         $this->view('index/index', $data);
     }
 }

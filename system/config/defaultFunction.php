@@ -27,3 +27,4 @@ function exception_handler($expClass, $heading='Error') {
 function __exception_php_error($expClass, $heading='PDO Error'){
     M4A1_Exception::exception_error($expClass, $heading);
 }
+
