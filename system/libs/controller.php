@@ -24,6 +24,10 @@ class Controller{
      * 
      */
     
+    public static $TITLE = 'Var $TITLE is not defined in controller';
+    public static $KEYWORD = 'Var $KEYWORD is not defined in controller';
+    public static $DESCRIPTION = 'Var $DESCRIPTION is not defined in controller';
+    
     public function __construct(){
 //        $this->load = new Load();
     }  

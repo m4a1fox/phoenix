@@ -1,6 +1,9 @@
 <?php
 
 class Index extends Controller{
+    
+    
+    
     function __construct(){
         parent::__construct();
         $this->js = array('views/index/js/test.js');
@@ -9,7 +12,7 @@ class Index extends Controller{
     
     function Index(){
         $data = array();
-        $data['title'] = 'Home';
+        self::$TITLE = 'Home';
         $this->view('index/index', $data);
     }
 }

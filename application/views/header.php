@@ -3,16 +3,11 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST;?>public/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />
-    <title>
-    <?php
-        
-        echo $title;
-        
-    ?>
-    </title>
-    <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
+    <title><?php echo self::$TITLE;?></title>
+    <meta name="description" content="<?php echo self::$KEYWORD;?>" />
+    <meta name="keywords" content="<?php echo self::$DESCRIPTION;?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>public/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />    <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>usefull/jqueryFileTree/jqueryFileTree.js"></script>
     <script src="/usefull/fckeditor/fckeditor.js" type="text/javascript"></script>
     <script src="<?php echo M4A1_HOST;?>usefull/fima/fima.js"></script>
