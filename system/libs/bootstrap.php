@@ -85,6 +85,4 @@ class Bootstrap{
             $this->dir->next();
         }
     }
-    
-    
 }
