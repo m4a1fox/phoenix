@@ -123,6 +123,11 @@ a{text-decoration: none; color: inherit;}
 #info_content ul li{ color: #8b8b8b;}
 #info_content ul li:hover{ color: white;}
 
+#info_content ul li:first-child{
+    color: red;
+    text-transform:capitalize;
+}
+
 #infoRight{z-index: -1;position: fixed; top: 0; right: 0; width: 200px; height: 100%;}
 #info_contentRight{position: inherit; padding: 10px; color: white; }
 

@@ -20,10 +20,6 @@ class Bootstrap{
         
         $file = $this->findFile($url[0]);
         
-
-
-        
-        
         
         
 //        $file = M4A1_CONTR . $url[0] . '.php';
@@ -80,9 +76,16 @@ class Bootstrap{
         $this->fileName = $file;
         $this->dir = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(M4A1_CONTR), TRUE);
         while($this->dir->valid()) {
-            if (!$this->dir->isDot() && $this->dir->getFilename() == $this->fileName.'.php') 
-                    return $this->dir->key();
+            if (!$this->dir->isDot() && $this->dir->getFilename() == $this->fileName.'.php'){
+                $fileExist = $this->dir->key();
+            }
             $this->dir->next();
+        }
+        
+        if(!empty($fileExist)){
+            return $fileExist;
+        }else{
+            return $file;
         }
     }
 }
