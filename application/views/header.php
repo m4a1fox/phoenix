@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title><?php echo self::$TITLE;?></title>
+    <title><?php echo self::TITLE();?></title>
     <meta name="description" content="<?php echo self::$KEYWORD;?>" />
     <meta name="keywords" content="<?php echo self::$DESCRIPTION;?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>public/css/style.css" />
@@ -29,7 +29,7 @@
 <body>
 <div style="height: 7px; background: black; border-bottom: 1px solid #737476; z-index: 99;"></div>
 
-<div style="height: 40px; width: 1100px;">
+<div style="height: 40px; width: 1000px;">
     <div id="search" >
         <form action="" method="post" id="search-form">
                 <input type="text" placeholder="Search" name="s" />
@@ -49,7 +49,7 @@
         <li>structure</li>
         <?php
             $link = new shortlink();
-            $link = $link->allLink();
+            $link = shortlink::gogo();
         ?>
         <?php foreach ($link as $value):?>
             <li>

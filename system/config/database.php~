@@ -14,13 +14,13 @@
  //                                                                 //
  /////////////////////////////////////////////////////////////////////
  * db is array()
- * @return array of settings to connect to DB
+ * @return array of settings to connect with DB
  * @var $db['default']['dbdriver']
  * @return dbdriver is (mysql, posterQ etc).
  * @var $db['default']['hostname']
- * @return host connection (Ex.:: - localhost)
+ * @return host connection 	(Ex.:: localhost)
  * @var $db['default']['dbname']
- * @return DB name (Ex.:: - wyd)
+ * @return DB name (Ex.:: wyd)
  * @var $db['default']['username']
  * @return user name
  * @var $db['default']['password']
@@ -30,7 +30,7 @@
  */
 $db['default']['dbdriver']  = 'mysql';
 $db['default']['hostname']  = 'localhost';
-$db['default']['dbname']    = '16.mb';
+$db['default']['dbname']    = '6.mb';
 $db['default']['username']  = 'root';
-$db['default']['password']  = '';
+$db['default']['password']  = '12345';
 $db['default']['char_set']  = 'utf8';

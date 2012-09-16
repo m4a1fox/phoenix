@@ -2,8 +2,6 @@
 
 class Index extends Controller{
     
-    
-    
     function __construct(){
         parent::__construct();
         $this->js = array('views/index/js/test.js');
