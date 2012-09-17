@@ -205,3 +205,12 @@ close:hover{cursor: pointer; color: red;}
     width: 400px;
     height: 400px;
 }
+
+
+#folio{
+    text-align: center;
+}
+
+#folio a img{
+    margin: 0 0 30px 0;
+}

@@ -32,5 +32,5 @@ $db['default']['dbdriver']  = 'mysql';
 $db['default']['hostname']  = 'localhost';
 $db['default']['dbname']    = '6.mb';
 $db['default']['username']  = 'root';
-$db['default']['password']  = '';
+$db['default']['password']  = '12345';
 $db['default']['char_set']  = 'utf8';
