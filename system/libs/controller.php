@@ -24,19 +24,28 @@ class Controller{
      * 
      */
     
-    public static $TITLE = 'Var $TITLE is not defined in controller';
-    public static $KEYWORD = 'Var $KEYWORD is not defined in controller';
-    public static $DESCRIPTION = 'Var $DESCRIPTION is not defined in controller';
+    
+    public static $TITLE = '';
+    public static $KEYWORD = '';
+    public static $DESCRIPTION = '';
     
     public function __construct(){
 //        $this->load = new Load();
-    }  
-
-       
+    }
     
-        function model($name){
+    public static function TITLE(){
+        return self::$TITLE;
+    }
+
+
+
+
+
+    function model($name){
             return $this->loadClass($name);
         }
+        
+
     
 
     
@@ -75,14 +84,6 @@ class Controller{
         }else{
             $this->loadClass($name, M4A1_LIBS);
         }
-        
-        
-        
-        
-        
-        
-        
-
     }
     
     function loadClass($name, $const = M4A1_MODELS){
@@ -95,8 +96,4 @@ class Controller{
                 exit();
             }    
     }
-
-    
-
-
 }
