@@ -214,3 +214,50 @@ close:hover{cursor: pointer; color: red;}
 #folio a img{
     margin: 0 0 30px 0;
 }
+
+.chat-bubble{
+    display: none;
+    background-color: #EDEDED;
+    border: 1px solid #666666;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-box-shadow:0 0 5px #888888;
+    -webkit-box-shadow:0 0 5px #888888;
+}
+.chat-bubble-arrow-border-bottom{
+    border-color:  #666666 transparent transparent ;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    bottom: -11px;
+    left: 7px;
+}
+.chat-bubble-arrow-bottom{
+    border-color:  #EDEDED transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    bottom: -9px;
+    left: 7px;
+}
+
+.chat-bubble-arrow-border-top{
+    border-color: transparent transparent #666666;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    top: -11px;
+    left: 7px;
+}
+.chat-bubble-arrow-top{
+    border-color:  transparent transparent #EDEDED;
+    border-style: solid;
+    border-width: 5px;
+    position: absolute;
+    top: -9px;
+    left: 7px;
+}
+
