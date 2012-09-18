@@ -82,7 +82,7 @@ abstract class Conf{
      * @param  $watermarkFilePath - Accepted values: './file/watermark.png'.
      *  
      */
-    protected $watermarkFilePath = '';
+    protected $watermarkFilePath = './file/watermark.png';
     
     /**
      * 
@@ -90,7 +90,7 @@ abstract class Conf{
      * @desc Switch watermark on the file
      * @param $watermarDo - Accepted values: TRUE || FALSE. default - TRUE 
      */
-    protected $watermarDo = FALSE;
+    protected $watermarDo = false;
         
     /**
      * 
@@ -101,7 +101,7 @@ abstract class Conf{
      * bottom_left, bottom_center, bottom_right.
      * 
      */
-    protected $watermarkPosition = 'bottom_left';
+    protected $watermarkPosition = 'top_center';
     
     
     //////////////////////////////////////////////////////////////////////////////////////////

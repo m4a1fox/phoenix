@@ -6,6 +6,7 @@
     <a href="<?php echo M4A1_HOST;?>admin">admin</a>
     <a href="<?php echo M4A1_HOST;?>fima">fima**</a>
     <a href="<?php echo M4A1_HOST;?>ladmin">ladmin</a>
+    <a href="<?php echo M4A1_HOST;?>fadmin">fadmin</a>
     <a href="<?php echo M4A1_HOST;?>dadmin">dadmin</a>
     <a href="<?php echo M4A1_HOST;?>cadmin">cadmin</a>
     <a href="<?php echo M4A1_HOST;?>editor">editor</a>

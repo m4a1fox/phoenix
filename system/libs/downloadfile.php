@@ -5,7 +5,7 @@
  */
 
 class DownloadFile extends Conf{
-    private     $folder; // folder to dawnload file
+    private     $folder; // folder to download file
     public      $image; 
     private     $smallWH; // size of small image W - width, H- height
     private     $smallImageName; // small image name

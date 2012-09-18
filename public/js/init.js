@@ -58,7 +58,7 @@ $(document).ready(function(){
         
         $(this).hover(function(){
             setTimeout(function(){
-                block.css({'left': w.left, 'top': w.top-40})
+                block.css({'left': w.left, 'top': w.top-25})
                 block.slideDown(speed);
                 block.html(title+arrow+arrowBg);
             }, showTimeout)
