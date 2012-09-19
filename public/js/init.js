@@ -3,8 +3,7 @@ $(document).ready(function(){
     var search_text = $("#search-form input[type=text]");
     var search_btn = $("#searchBtn");
     
-    $("#chat-bubble").infoBar();
-    
+   
     
     $(currentMenu).addClass('selected-menu');
 
@@ -15,23 +14,25 @@ $(document).ready(function(){
             }else{
                 $(search_btn).css({'visibility': 'hidden'});
             }
-        })
+        });
 
 
     $(search_btn).click(function(){
         $(this).val();
         $(search_btn).css({'visibility': 'hidden', 'cursor': 'pointer'});
-    })
+    });
     
     
     $('code > span > span').css({'color': 'white'});
     $("#code > code").css({'margin': '10px 40px'});
       
-    var codeWidth = $("#code").width()
-    var codeHeight = $("#code").height()
+    var codeWidth = $("#code").width();
+    var codeHeight = $("#code").height();
     
     $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'});
-    $('#footer a[href="'+ currentUrl +'"]').css({'background': 'wheat', 'color': 'black'})
+    $('#footer a[href="'+ currentUrl +'"]').css({'background': 'wheat', 'color': 'black'});
+    $("#chat-bubble").infoBar();
+    $("#chat-bubble-two").infoBar();
     
 });
 
@@ -46,22 +47,25 @@ $(document).ready(function(){
         
        
         
-        var id = $(this).attr('id')
+        var id = $(this).attr('id');
         var title = $(this).attr('title');
-        var block = $('body').find('.'+id)
+        var block = $('body').find('.'+id);
         var w = $(this).offset();
+        var p = $(this).position();
+        var top = w.top - 25;
+        var left = w.left;
  
         var arrow = '<div class="chat-bubble-arrow-border-bottom"></div>';
         var arrowBg = '<div class="chat-bubble-arrow-bottom"></div>';
-         console.log(w)
+         console.log(p);
         
         
         $(this).hover(function(){
             setTimeout(function(){
-                block.css({'left': w.left, 'top': w.top-25})
+                block.css({'left': w.left, 'top': w.top-25});
                 block.slideDown(speed);
                 block.html(title+arrow+arrowBg);
-            }, showTimeout)
+            }, showTimeout);
         }, function(){
             block.slideUp(100);
             $(this).attr('title', block.text());
