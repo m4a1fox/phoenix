@@ -57,7 +57,11 @@ $(document).ready(function(){
  
         var arrow = '<div class="chat-bubble-arrow-border-bottom"></div>';
         var arrowBg = '<div class="chat-bubble-arrow-bottom"></div>';
+<<<<<<< HEAD
          console.log(p);
+=======
+
+>>>>>>> 7a89f39f4fb406407b2dede72f18d475feb13d53
         
         
         $(this).hover(function(){

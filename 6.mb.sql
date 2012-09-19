@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2
+-- version 3.5.2.2
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Авг 15 2012 г., 13:57
+-- Время создания: Сен 19 2012 г., 07:57
 -- Версия сервера: 5.5.25a
 -- Версия PHP: 5.3.15
 
@@ -57,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `content` (
   `date` date NOT NULL,
   `time` time NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 --
 -- Дамп данных таблицы `content`
@@ -67,6 +67,32 @@ INSERT INTO `content` (`id`, `title`, `link`, `tag`, `meta_d`, `meta_k`, `conten
 (7, 'Captcha', 'captcha', 'Captcha', 'Captcha', 'Captcha', '       123123123 Captcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha CaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptchaCaptcha', '2012-08-18', '17:12:09'),
 (8, 'Download', 'download', 'Download', 'Download', 'Download', '  downloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownloaddownload', '2012-08-14', '17:36:40'),
 (10, 'Database', 'database', 'Database, Download', 'Data, Dowload', 'Data, Download', '   DarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabaseDarabase', '2012-08-15', '19:20:29');
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `folio`
+--
+
+CREATE TABLE IF NOT EXISTS `folio` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `dev_time` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `platform` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `link` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `description` text CHARACTER SET utf8 NOT NULL,
+  `img` tinytext CHARACTER SET utf8 NOT NULL,
+  `img_s` tinytext CHARACTER SET utf8 NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Дамп данных таблицы `folio`
+--
+
+INSERT INTO `folio` (`id`, `title`, `dev_time`, `platform`, `link`, `description`, `img`, `img_s`) VALUES
+(1, '1', '2', '3', '4', '5', './file/B4UJN1aqL9.jpg', './file/B4UJN1aqL9_s.jpg'),
+(2, 'Department of Obstetrics and Gynecology', '2 month', 'Wordpress', 'http://obgyn.mokamedianyc.com/', 'Hard first work with WP', './file/HwZRybXMes.png', './file/HwZRybXMes_s.png');
 
 -- --------------------------------------------------------
 
