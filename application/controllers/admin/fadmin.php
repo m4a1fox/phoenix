@@ -39,4 +39,9 @@ class Fadmin extends Controller{
         $this->view("admin/fadmin/index", $data);
     }
     
+    function delete($id){
+            $this->get_db->delete1(array('id'=>$id), 'folio');
+            header("Location: /fadmin");
+        }
+    
 }

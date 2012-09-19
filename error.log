@@ -255,3 +255,4 @@
 [Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/ladmin/edit/7
 [Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/ladmin/edit/7
 [Sat Sep 01 17:19:46 2012] [error] [client 127.0.0.1] PHP   3. Admin->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:45, referer: http://phoenix.local/ladmin/edit/7
+[Wed Sep 19 12:04:19 2012] [error] [client 127.0.0.1] Directory index forbidden by Options directive: /home/maxim/workspace/phoenix/file/

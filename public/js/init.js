@@ -31,10 +31,12 @@ $(document).ready(function(){
     
     $("code").css({'width': codeWidth, 'height': codeHeight, 'position': 'absolute'});
     $('#footer a[href="'+ currentUrl +'"]').css({'background': 'wheat', 'color': 'black'});
-    $("#chat-bubble").infoBar();
-    $("#chat-bubble-two").infoBar();
+//    $("#chat-bubble").infoBar();
+//    $("#chat-bubble-two").infoBar();
     
 });
+
+
 
 (function($){
 

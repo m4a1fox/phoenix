@@ -12,7 +12,7 @@ class Folio extends Controller{
         
         $data['content'] = $this->get_db->selectMulti('folio');
         
-        
+        self::$TITLE = 'PORTFOLIO';
         $this->view('folio/index', $data);
         
         

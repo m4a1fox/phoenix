@@ -6,11 +6,11 @@
     <?php echo $value->title?>
 </span>
 ||
-<a href="/admin/delete/<?php echo $value->id?>" type="del">
+<a href="/fadmin/delete/<?php echo $value->id?>" type="del">
     [ x ]
 </a>
 ||
-<a href="/admin/edit/<?php echo $value->id?>" type="edit">
+<a href="/fadmin/edit/<?php echo $value->id?>" type="edit">
     [ / ]
 </a>
 <br />
