@@ -53,7 +53,7 @@ $(document).ready(function(){
  
         var arrow = '<div class="chat-bubble-arrow-border-bottom"></div>';
         var arrowBg = '<div class="chat-bubble-arrow-bottom"></div>';
-         console.log(w)
+
         
         
         $(this).hover(function(){
