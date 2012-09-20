@@ -13,7 +13,6 @@ class Fadmin extends Controller{
         $data['content'] = $this->get_db->selectMulti('folio');
         
         if(isset($_POST['send'])){
-            $config['post'] = $_POST;
             $config['image'] = $_FILES['file'];
             $config['folder'] = './file/';
             $config['smallWH'] = array(300, 300);
