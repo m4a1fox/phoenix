@@ -143,7 +143,15 @@ a{text-decoration: none; color: inherit;}
     position: inherit;
 }
 
-.code{display: block; border: 1px solid gray; border-radius: 5px; padding: 10px; background: black; color: whitesmoke; font-weight: lighter;}
+.code{
+
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    padding: 10px; 
+    background: black; 
+    color: whitesmoke;
+    margin-left: 0px;
+}
 
 .num { 
     padding: 10px 0 10px 0;
