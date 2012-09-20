@@ -99,7 +99,7 @@ FCKConfig.ToolbarSets["Default"] = [
 	['Source', '-', 'Cut','Copy','Paste','PasteText','PasteWord', '-', 'Undo','Redo','-','Find','Replace'],
 	['RemoveFormat', 'Link','Unlink','Anchor' ,'Image','Flash','Table','Rule','SpecialChar'],
 	'/',
-	['Bold','Italic','Underline','StrikeThrough','-', 'OrderedList','UnorderedList','Outdent','Indent','-', 'JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
+	['Bold','Italic','Underline','StrikeThrough','-', 'Bold','-', 'OrderedList','UnorderedList','Outdent','Indent','-', 'JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
 	['FontFormat','FontSize','TextColor','BGColor']
 ] ;
 

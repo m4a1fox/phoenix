@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    
+
     $("#article").hide();
     $("#show-article").css('cursor', 'pointer').click(function(){
         $("#article").slideToggle('slow');
@@ -9,7 +11,7 @@ $(document).ready(function(){
         $(this).val(toTranslit(text));
     })
     if($("textarea").size() > 0){
-        var oFCKeditor = new FCKeditor('text',/*id block*/ '460px'/*width*/, '300px'/*height*/, 'Default'/*toolbar Set*/, ''/*value*/, 'usefull'/*path to folder with fckedit*/);
+        var oFCKeditor = new FCKeditor('text',/*id block*/ '460px'/*width*/, '700px'/*height*/, 'Default'/*toolbar Set*/, ''/*value*/, 'usefull'/*path to folder with fckedit*/);
         oFCKeditor.ReplaceTextarea();
     }
 })

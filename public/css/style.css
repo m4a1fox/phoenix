@@ -143,8 +143,7 @@ a{text-decoration: none; color: inherit;}
     position: inherit;
 }
 
-#code{display: block; border: 1px solid gray; border-radius: 5px;}
-#code > code{display: block;}
+.code{display: block; border: 1px solid gray; border-radius: 5px; padding: 10px; background: black; color: whitesmoke; font-weight: lighter;}
 
 .num { 
     padding: 10px 0 10px 0;
