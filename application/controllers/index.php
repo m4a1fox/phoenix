@@ -9,8 +9,7 @@ class Index extends Controller{
     }
     
     function Index(){
-        $data = array();
-        self::$TITLE = 'Home';
-        $this->view('index/index', $data);
+        META::$TITLE = 'Home';
+        $this->view('index/index');
     }
 }

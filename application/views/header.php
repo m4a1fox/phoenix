@@ -3,9 +3,9 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title><?php echo self::TITLE();?></title>
-    <meta name="description" content="<?php echo self::$KEYWORD;?>" />
-    <meta name="keywords" content="<?php echo self::$DESCRIPTION;?>" />
+    <title><?php echo META::TITLE();?></title>
+    <meta name="description" content="<?php echo META::KEYWORD();?>" />
+    <meta name="keywords" content="<?php echo META::DESCRIPTION();?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>public/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo M4A1_HOST; ?>usefull/jqueryFileTree/jqueryFileTree.css" />    <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/jQuery.js"></script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>usefull/jqueryFileTree/jqueryFileTree.js"></script>

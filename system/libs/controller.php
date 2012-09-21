@@ -25,17 +25,13 @@ class Controller{
      */
     
     
-    public static $TITLE = '';
-    public static $KEYWORD = '';
-    public static $DESCRIPTION = '';
+
     
     public function __construct(){
 //        $this->load = new Load();
     }
     
-    public static function TITLE(){
-        return self::$TITLE;
-    }
+
 
 
 
