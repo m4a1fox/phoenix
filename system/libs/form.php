@@ -18,7 +18,7 @@ class Form{
      * __construct - Instantiates the validator class
      */
     public function __construct(){
-        $this->_val = new Val();
+        $this->_val = new Va();
     }
     
     /**
