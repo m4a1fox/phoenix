@@ -25,7 +25,7 @@ function autoload($className){
             include $value . strtolower($className) . '.php';
         }
     }
-    echo '<pre>'.print_r($t, 1).'</pre>';
+//    echo '<pre>'.print_r($t, 1).'</pre>';
 }
 
 

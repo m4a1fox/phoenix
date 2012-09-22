@@ -458,3 +458,16 @@
 [Fri Sep 21 12:48:20 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/content/show/captcha
 [Fri Sep 21 12:48:20 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/content/show/captcha
 [Fri Sep 21 12:48:20 2012] [error] [client 127.0.0.1] PHP   3. Folio->Index() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:56, referer: http://phoenix.local/content/show/captcha
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Va' not found in /home/maxim/workspace/phoenix/system/libs/form.php on line 21, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP   3. Ex->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP   4. Controller->library() /home/maxim/workspace/phoenix/application/controllers/ex.php:6, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP   5. Controller->loadClass() /home/maxim/workspace/phoenix/system/libs/controller.php:81, referer: http://phoenix.local/about
+[Sat Sep 22 18:03:36 2012] [error] [client 127.0.0.1] PHP   6. Form->__construct() /home/maxim/workspace/phoenix/system/libs/controller.php:89, referer: http://phoenix.local/about
+[Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP Fatal error:  Access level to Search::__construct() must be public (as in class Controller) in /home/maxim/workspace/phoenix/application/controllers/search.php on line 3, referer: http://phoenix.local/
+[Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP   3. require() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:30, referer: http://phoenix.local/

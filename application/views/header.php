@@ -31,10 +31,10 @@
 
 <div style="height: 40px; width: 1000px;">
     <div id="search" >
-        <form action="" method="post" id="search-form">
-                <input type="text" placeholder="Search" name="s" />
+        <form action="<?php echo M4A1_HOST;?>search" method="post" id="search-form">
+                <input type="text" placeholder="Search" name="search" />
                 <input type="reset" name="search" id="searchBtn" value="X" />
-                <input type="submit" name="search" id="searchBtn" value="" />
+                <input type="submit" name="send" id="searchBtn" value="" />
             </form>
             
         </div>
