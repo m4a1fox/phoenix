@@ -19,11 +19,12 @@
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/init.js"></script>
     <?php
 
-    if(isset($this->js)){
-        foreach($this->js as $js){
-            echo '<script type="text/javascript" src="'.M4A1_HOST.'application/'.$js.'"></script>';
-        }
-    }
+//    if(isset($this->js)){
+//        foreach($this->js as $js){
+//            echo '<script type="text/javascript" src="'.M4A1_HOST.'application/'.$js.'"></script>';
+//        }
+//    }
+IncludeFile::JS();
     ?>
 </head>
 <body>
