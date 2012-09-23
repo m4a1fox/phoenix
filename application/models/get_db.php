@@ -29,5 +29,9 @@
         function delete1($data, $table='user'){
             $this->db->delete($table, $data);
         }
+        
+        function selectLike($data, $table='content'){
+            return $this->db->selectLike($table, $data);
+        }
 
     }

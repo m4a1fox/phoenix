@@ -62,6 +62,13 @@ class Database extends PDO{
         return $stn->execute();
     }
     
+    public function selectLike($table, $data){
+        $where = $this->generalLikeArray($data);
+        $sql = $this->prepare("SELECT * FROM `$table` WHERE $where");
+        $sql->execute($data);
+        return $sql->fetch(PDO::FETCH_OBJ);
+    }
+    
     
     public function generalImplodeArray($data){
     	$str = '';
@@ -73,6 +80,12 @@ class Database extends PDO{
     	$str = '';
         ksort($data);
         return implode(" AND ", array_map(function($str){return '`'.$str.'` = :'.$str;}, array_keys($data)));
+    }
+    
+    private function generalLikeArray($data){
+    	$str = '';
+        ksort($data);
+        return implode(" AND ", array_map(function($str){return '`'.$str.'` LIKE :'.$str;}, array_keys($data)));
     }
     
     
