@@ -7,7 +7,7 @@ class Ladmin extends Controller{
         function __construct(){
             parent::__construct();
             $this->model('get_db');
-            $this->js = array('views/admin/js/init.js', 'views/admin/js/func.js');
+            MOUNT::$JS = array('views/admin/js/init.js', 'views/admin/js/func.js');
         }
         
         function Index(){

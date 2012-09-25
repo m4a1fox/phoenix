@@ -10,6 +10,10 @@ function viewIsNotExistInClass($file){
     return 'Исключение в виде. Файл <span id="error">'.$file.'</span> не существует!';
 }
 
+function classIsNotExist($file){
+    return 'Файл и класс <span id="error">'.$file.'</span> не существует!';
+}
+
 
  /**
   * Константа

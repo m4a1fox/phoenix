@@ -4,8 +4,7 @@ class Content extends Controller{
     function __construct() {
         parent::__construct();
         $this->model('get_db');
-//        $this->js = array('views/content/js/init.js');
-        IncludeFile::$JS = array('views/content/js/init.js');
+        MOUNT::$JS = array('views/content/js/init.js');
     }
     
     function Index(){

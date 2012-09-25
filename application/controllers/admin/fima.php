@@ -5,7 +5,7 @@ class Fima extends Controller{
     
     function __construct() {
         parent::__construct();
-        $this->js = array('views/admin/fima/js/init.js');
+        MOUNT::$JS = array('views/admin/fima/js/init.js');
     }
     
     

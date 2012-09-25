@@ -471,3 +471,167 @@
 [Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
 [Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
 [Sat Sep 22 18:16:08 2012] [error] [client 127.0.0.1] PHP   3. require() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:30, referer: http://phoenix.local/
+[Mon Sep 24 12:33:30 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'IncludeFile' not found in /home/maxim/workspace/phoenix/application/controllers/index.php on line 7, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:33:30 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:33:30 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:33:30 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:33:30 2012] [error] [client 127.0.0.1] PHP   3. Index->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:16, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:34:03 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUNT' not found in /home/maxim/workspace/phoenix/application/controllers/index.php on line 7, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:34:03 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:34:03 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:34:03 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:34:03 2012] [error] [client 127.0.0.1] PHP   3. Index->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:16, referer: http://phoenix.local/log/in
+[Mon Sep 24 12:35:07 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'IncludeFile' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:35:07 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:35:07 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:35:07 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:35:07 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:35:32 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:35:32 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:35:32 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:35:32 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:35:32 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:35:49 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:35:49 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:35:49 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:35:49 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:35:49 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:36:21 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:36:21 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:36:21 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:36:21 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:36:21 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: t in /home/maxim/workspace/phoenix/system/config/defaultFunction.php on line 32, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   2. require() /home/maxim/workspace/phoenix/index.php:15, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: t in /home/maxim/workspace/phoenix/system/config/defaultFunction.php on line 32
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0
+[Mon Sep 24 12:36:40 2012] [error] [client 127.0.0.1] PHP   2. require() /home/maxim/workspace/phoenix/index.php:15
+[Mon Sep 24 12:36:51 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:36:51 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:36:51 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:36:51 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:36:51 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:37:02 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:37:02 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:37:02 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:37:02 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:37:02 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:37:11 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:37:11 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:37:11 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:37:11 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:37:11 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:37:45 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:37:45 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:37:45 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:37:45 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:37:45 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:45:27 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:45:27 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:45:27 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:45:27 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:45:27 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:50:48 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:50:48 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:50:48 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:50:48 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:50:48 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getCode() on a non-object in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 14, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   4. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   5. exception_handler() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:13, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   6. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:42, referer: http://phoenix.local/
+[Mon Sep 24 12:50:54 2012] [error] [client 127.0.0.1] PHP   7. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to a member function getCode() on a non-object in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 14, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   4. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   5. exception_handler() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:14, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   6. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:43, referer: http://phoenix.local/
+[Mon Sep 24 12:51:00 2012] [error] [client 127.0.0.1] PHP   7. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/
+[Mon Sep 24 12:52:26 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:52:26 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:52:26 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:52:26 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:52:26 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:57:11 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:57:11 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:57:11 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:57:11 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:57:11 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 12:57:22 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUN' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 12:57:22 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 12:57:22 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 12:57:22 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 12:57:22 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP Fatal error:  Cannot access private property Exception::$trace in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 107, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP   4. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP   5. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:13, referer: http://phoenix.local/
+[Mon Sep 24 13:06:59 2012] [error] [client 127.0.0.1] PHP   6. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP Fatal error:  Cannot access private property Exception::$trace in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 107, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   4. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   5. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:13, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   6. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29, referer: http://phoenix.local/content/show/download
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP Fatal error:  Cannot access private property Exception::$trace in /home/maxim/workspace/phoenix/system/errors/exc_error.php on line 107
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   3. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:32
+[Mon Sep 24 13:07:00 2012] [error] [client 127.0.0.1] PHP   4. include() /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php:29
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php on line 29, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   4. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   5. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ')', expecting T_STRING or T_VARIABLE or '$' in /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php on line 29
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35
+[Mon Sep 24 13:12:55 2012] [error] [client 127.0.0.1] PHP   3. autoload() /home/maxim/workspace/phoenix/index.php:0
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP Fatal error:  Undefined class constant 'self' in /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php on line 29, referer: http://phoenix.local/
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP   4. autoload() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:13:01 2012] [error] [client 127.0.0.1] PHP   5. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/config/defaultFunction.php:13, referer: http://phoenix.local/
+[Mon Sep 24 13:13:02 2012] [error] [client 127.0.0.1] PHP Fatal error:  Undefined class constant 'self' in /home/maxim/workspace/phoenix/system/libs/m4a1_exception.php on line 29
+[Mon Sep 24 13:13:02 2012] [error] [client 127.0.0.1] PHP Stack trace:
+[Mon Sep 24 13:13:02 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0
+[Mon Sep 24 13:13:02 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35
+[Mon Sep 24 13:13:02 2012] [error] [client 127.0.0.1] PHP   3. M4A1_Exception::php_error() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:32
+[Mon Sep 24 13:24:01 2012] [error] [client 127.0.0.1] PHP Fatal error:  Class 'MOUT' not found in /home/maxim/workspace/phoenix/application/controllers/content.php on line 8, referer: http://phoenix.local/
+[Mon Sep 24 13:24:01 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/
+[Mon Sep 24 13:24:01 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/
+[Mon Sep 24 13:24:01 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:35, referer: http://phoenix.local/
+[Mon Sep 24 13:24:01 2012] [error] [client 127.0.0.1] PHP   3. Content->__construct() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:36, referer: http://phoenix.local/
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined method shortlink::gogo() in /home/maxim/workspace/phoenix/application/views/header.php on line 42, referer: http://phoenix.local/content/show/download
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://phoenix.local/content/show/download
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP   1. {main}() /home/maxim/workspace/phoenix/index.php:0, referer: http://phoenix.local/content/show/download
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP   2. Bootstrap->__construct() /home/maxim/workspace/phoenix/index.php:33, referer: http://phoenix.local/content/show/download
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP   3. Content->show() /home/maxim/workspace/phoenix/system/libs/bootstrap.php:40, referer: http://phoenix.local/content/show/download
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP   4. Controller->view() /home/maxim/workspace/phoenix/application/controllers/content.php:18, referer: http://phoenix.local/content/show/download
+[Tue Sep 25 17:45:48 2012] [error] [client 127.0.0.1] PHP   5. require() /home/maxim/workspace/phoenix/system/libs/controller.php:56, referer: http://phoenix.local/content/show/download

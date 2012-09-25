@@ -5,7 +5,7 @@ class Fadmin extends Controller{
         parent::__construct();
         $this->library('downloadfile');
         $this->model('get_db');
-        $this->js = array('views/admin/js/init.js', 'views/admin/js/func.js');
+        MOUNT::$JS = array('views/admin/js/init.js', 'views/admin/js/func.js');
     }
     
     

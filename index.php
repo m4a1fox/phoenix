@@ -30,6 +30,4 @@ set_error_handler('__simple_php_error');
 Registry::set('DB', new Database($db['default']['dbdriver'], $db['default']['hostname'], $db['default']['dbname'], $db['default']['username'], $db['default']['password'], $db['default']['char_set']));
 
 
-
-
 new Bootstrap();

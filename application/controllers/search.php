@@ -11,7 +11,9 @@ class Search extends Controller{
         $search = $_POST['search'];
         $data['post'] = $this->get_db->selectLike(array('content'=>'%'.$search.'%'), 'content');
         
-        
+        if(empty($data['post'])){
+            $data['post'] = 'Nothing to find';
+        }
         
         
         

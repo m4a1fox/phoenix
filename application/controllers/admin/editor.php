@@ -5,7 +5,7 @@
             parent::__construct();
             $this->model('get_db'); // Вызывается внутрення модель. Кот. создается админом
             $this->library('window'); // Вызывается класс созданный создателем LEAVSE.
-            $this->js = array('views/admin/editor/js/init.js');
+            MOUNT::$JS = array('views/admin/editor/js/init.js');
         }
         
         function Index(){

@@ -1,6 +1,13 @@
 *{font-family: Vardana, sans-serif; margin: 0px auto; padding: 0;}
 html{height:100%; background: url('../img/bg.jpg');}
 
+.top-str{
+    height: 7px; 
+    background: black; 
+    border-bottom: 1px solid #737476; 
+    z-index: 99;
+}
+
 body{
     margin: 0;
     padding-bottom: 30px;
@@ -61,7 +68,7 @@ a{text-decoration: none; color: inherit;}
 
 
 #search{padding: 8px; line-height: 50px; text-align: right;}
-#search input{height: 33px; margin-right: 20px;}
+#search input{height: 33px; margin-right: 2 0px;}
 
 #search input[type=text]{
     width: 290px;

@@ -18,39 +18,28 @@
     </script>
     <script type="text/javascript" src="<?php echo M4A1_HOST;?>public/js/init.js"></script>
     <?php
-
-//    if(isset($this->js)){
-//        foreach($this->js as $js){
-//            echo '<script type="text/javascript" src="'.M4A1_HOST.'application/'.$js.'"></script>';
-//        }
-//    }
-IncludeFile::JS();
+        MOUNT::JS();
     ?>
 </head>
 <body>
-<div style="height: 7px; background: black; border-bottom: 1px solid #737476; z-index: 99;"></div>
+<div class="top-str"></div>
 
-<div style="height: 40px; width: 1000px;">
-    <div id="search" >
-        <form action="<?php echo M4A1_HOST;?>search" method="post" id="search-form">
-                <input type="text" placeholder="Search" name="search" />
-                <input type="reset" name="search" id="searchBtn" value="X" />
-                <input type="submit" name="send" id="searchBtn" value="" />
-            </form>
-            
-        </div>
+<div id="search" >
+    <form action="<?php echo M4A1_HOST;?>search" method="post" id="search-form">
+        <input type="text" placeholder="Search" name="search" />
+        <input type="reset" name="search" id="searchBtn" value="X" />
+        <input type="submit" name="send" id="searchBtn" value="" />
+    </form>        
 </div>
-<div id="content">
 
+<div id="content">
 <div id="info">
     <div id="transparent"></div>
-    
     <div id="info_content">
         <ul>
         <li>structure</li>
         <?php
-            $link = new shortlink();
-            $link = shortlink::gogo();
+            $link = shortlink::allLink();
         ?>
         <?php foreach ($link as $value):?>
             <li>

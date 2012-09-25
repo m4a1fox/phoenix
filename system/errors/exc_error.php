@@ -1,4 +1,5 @@
 <?php
+$i=0;
 require './system/config/database.php';
     if(isset($_POST['create'])){        
         $dbname = $db['default']['dbname'];
@@ -80,6 +81,7 @@ p {
 </style>
 </head>
 <body>
+
 <div  id="error_head">
     <span style="padding-top: 3px; font-size: large;">&#9658;</span> 
         Error correspondent in your SYSTEM. Check information to correct it.
@@ -100,7 +102,11 @@ p {
 		<p><strong>Error message:</strong> <?php echo $expClass->getMessage(); ?></p>
 		<p><strong>Error line:</strong> <?php echo $expClass->getLine(); ?></p>
 		<p><strong>Error information:</strong> <?php echo $myMessage; ?></p>
-		<p><strong>Error file:</strong> <?php echo $expClass->getFile(); ?></p>
+		<p><strong>The exception was thrown in file:</strong> <?php echo $expClass->getFile(); ?></p>
+                <?php foreach ($expClass->getTrace() as $value) {
+                    
+                    echo !isset($value['file']) ? '' : '<p><strong>Error #'.++$i.' in file: </strong>'.$value['file']. '('.$value['line'].')</p>';
+                }?>
 	</div>
 </body>
 </html>

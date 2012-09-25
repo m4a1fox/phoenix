@@ -40,7 +40,7 @@ class Bootstrap{
                 $controller->{$url[1]}($url[2]);
             }else{
                 M4A1_Exception::php_error(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
-                exit();
+                exit;
             }
         }else{
             if(isset($url[1])){
@@ -49,14 +49,14 @@ class Bootstrap{
                 }else{
                     M4A1_Exception::php_error(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
 //                    exception_handler(new Exception('Method not exists'), methodIsNotExistInClass($url[1], $file));
-//                    exit();
+                    exit;
                 }
             }else{
                 if(method_exists($controller, 'index')){
                     $controller->index();    
                 }else{
                     exception_handler(new Exception('Method not exists'), methodIsNotExistInClass('Index', $file));
-                    exit();
+                    exit;
                 }
             }
         }

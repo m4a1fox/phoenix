@@ -4,7 +4,7 @@ class Index extends Controller{
     
     function __construct(){
         parent::__construct();
-        IncludeFile::$JS = array('views/index/js/test.js');
+        MOUNT::$JS = array('views/index/js/test.js');
         $this->model('get_db');
     }
     
